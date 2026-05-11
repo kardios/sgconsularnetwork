@@ -12,34 +12,53 @@ from contextlib import asynccontextmanager
 
 load_dotenv()
 
-YAML_PATH = 'mission_routing_data.yaml'
-JSON_PATH = 'missions.json'
-MAPPING_PATH = 'country_mapping.json'
+from pathlib import Path
+
+# Setup absolute paths
+BASE_DIR = Path(__file__).resolve().parent
+YAML_PATH = BASE_DIR / 'mission_routing_data.yaml'
+JSON_PATH = BASE_DIR / 'missions.json'
+MAPPING_PATH = BASE_DIR / 'country_mapping.json'
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Load YAML
-    with open(YAML_PATH, 'r', encoding='utf-8') as f:
-        data = yaml.safe_load(f)
-    
-    # Load Missions JSON
-    if os.path.exists(JSON_PATH):
-        with open(JSON_PATH, 'r', encoding='utf-8') as f:
-            missions_json = json.load(f)
-        missions_data = {m['name']: m for m in missions_json}
-    else:
-        missions_data = data.get('missions', {})
+    try:
+        # Load YAML
+        if YAML_PATH.exists():
+            with open(YAML_PATH, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f)
+        else:
+            print(f"Warning: {YAML_PATH} not found")
+            data = {}
         
-    # Load Country Mapping
-    if os.path.exists(MAPPING_PATH):
-        with open(MAPPING_PATH, 'r', encoding='utf-8') as f:
-            country_mapping = json.load(f)
-    else:
-        country_mapping = {}
+        # Load Missions JSON
+        missions_data = {}
+        if JSON_PATH.exists():
+            with open(JSON_PATH, 'r', encoding='utf-8') as f:
+                missions_json = json.load(f)
+            missions_data = {m['name']: m for m in missions_json}
+        else:
+            print(f"Warning: {JSON_PATH} not found")
+            missions_data = data.get('missions', {})
+            
+        # Load Country Mapping
+        if MAPPING_PATH.exists():
+            with open(MAPPING_PATH, 'r', encoding='utf-8') as f:
+                country_mapping = json.load(f)
+        else:
+            print(f"Warning: {MAPPING_PATH} not found")
+            country_mapping = {}
 
-    app.state.data = data
-    app.state.missions_data = missions_data
-    app.state.country_mapping = country_mapping
+        app.state.data = data
+        app.state.missions_data = missions_data
+        app.state.country_mapping = country_mapping
+    except Exception as e:
+        print(f"Error during startup: {e}")
+        # Initialize with empty data to avoid crashing the whole server
+        app.state.data = {}
+        app.state.missions_data = {}
+        app.state.country_mapping = {}
+        
     yield
     # Cleanup if necessary
 
@@ -148,6 +167,10 @@ geolocator = Nominatim(user_agent="antigravity_mission_router")
 
 class LocationRequest(BaseModel):
     location: str
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
 
 @app.post("/route")
 async def route_location(req: Request, payload: LocationRequest):
