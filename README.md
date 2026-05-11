@@ -22,7 +22,7 @@ An interactive map and routing system for Singapore's overseas missions. This ap
 
 2. **Run the Server**:
    ```bash
-   python server.py
+   python app.py
    ```
 
 3. **Access the App**:
