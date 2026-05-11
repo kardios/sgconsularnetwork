@@ -12,6 +12,11 @@ from contextlib import asynccontextmanager
 
 load_dotenv()
 
+ACCESS_PASSWORD = os.environ.get("ACCESS_PASSWORD", "mfa2026")
+SESSION_TOKEN = "sg-consular-secure-v1"
+
+from fastapi.responses import JSONResponse, FileResponse
+
 from pathlib import Path
 
 # Setup absolute paths
@@ -63,6 +68,41 @@ async def lifespan(app: FastAPI):
     # Cleanup if necessary
 
 app = FastAPI(lifespan=lifespan)
+
+# Authentication Middleware
+@app.middleware("http")
+async def auth_middleware(request: Request, call_next):
+    # Public paths
+    public_paths = ["/", "/login", "/style.css", "/app.js", "/favicon.ico", "/health"]
+    
+    if request.url.path in public_paths:
+        return await call_next(request)
+    
+    # Check for session cookie
+    auth_cookie = request.cookies.get("session_token")
+    if auth_cookie != SESSION_TOKEN:
+        # If it's an API call or data file, return 401
+        if request.url.path.endswith((".json", ".yaml")) or request.url.path == "/route":
+            return JSONResponse(status_code=401, content={"detail": "Unauthorized"})
+        # Otherwise redirect to home (where the login overlay will show)
+        return JSONResponse(status_code=401, content={"detail": "Unauthorized"})
+
+    return await call_next(request)
+
+@app.post("/login")
+async def login(payload: dict):
+    password = payload.get("password")
+    if password == ACCESS_PASSWORD:
+        response = JSONResponse(content={"message": "Logged in"})
+        response.set_cookie(
+            key="session_token", 
+            value=SESSION_TOKEN, 
+            httponly=True, 
+            samesite="lax",
+            max_age=60*60*24*7 # 1 week
+        )
+        return response
+    raise HTTPException(status_code=401, detail="Invalid password")
 
 # Enable CORS for frontend integration
 app.add_middleware(

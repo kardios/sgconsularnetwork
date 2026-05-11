@@ -16,6 +16,45 @@ let map;
         }
 
         async function init() {
+            // Handle Login
+            const loginOverlay = document.getElementById('login-overlay');
+            const passwordInput = document.getElementById('password-input');
+            const loginBtn = document.getElementById('login-btn');
+            const loginError = document.getElementById('login-error');
+
+            const performLogin = async () => {
+                const password = passwordInput.value.trim();
+                if (!password) return;
+                
+                loginBtn.disabled = true;
+                loginBtn.textContent = 'Verifying...';
+                
+                try {
+                    const res = await fetch('/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ password })
+                    });
+                    
+                    if (res.ok) {
+                        loginOverlay.classList.remove('visible');
+                        // Retry initialization
+                        location.reload(); 
+                    } else {
+                        loginError.textContent = 'Incorrect password. Access denied.';
+                        passwordInput.value = '';
+                    }
+                } catch (e) {
+                    loginError.textContent = 'Server error. Please try again.';
+                } finally {
+                    loginBtn.disabled = false;
+                    loginBtn.textContent = 'Access Map';
+                }
+            };
+
+            loginBtn.onclick = performLogin;
+            passwordInput.onkeypress = (e) => { if (e.key === 'Enter') performLogin(); };
+
             map = L.map('map', {
                 zoomControl: false,
                 attributionControl: false
@@ -34,6 +73,12 @@ let map;
                     fetch('countries.json'),
                     fetch('country_mapping.json')
                 ]);
+
+                if (missionsRes.status === 401 || countriesRes.status === 401 || mappingRes.status === 401) {
+                    loginOverlay.classList.add('visible');
+                    document.getElementById('loading').style.display = 'none';
+                    return;
+                }
 
                 if (!missionsRes.ok || !countriesRes.ok || !mappingRes.ok) throw new Error('Failed to load data');
                 
