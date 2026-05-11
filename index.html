@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consular Network | Singapore Overseas Missions</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading">
+        <div class="spinner"></div>
+        <p style="margin-top: 20px; font-weight: 300; letter-spacing: 0.1em; font-size: 0.8rem; color: var(--text-dim);">INITIALIZING CONSULAR NETWORK</p>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1>🇸🇬 Consular Network</h1>
+            <div class="search-container">
+                <input type="text" class="search-input" id="search" placeholder="Search location or mission...">
+                <div class="search-spinner" id="search-spinner"></div>
+            </div>
+            <div class="search-status" id="search-status"></div>
+        </div>
+        <div class="mission-list" id="list">
+            <!-- List items will be injected here -->
+        </div>
+    </div>
+
+    <div class="info-panel" id="info-panel">
+        <button class="close-btn" onclick="closeInfoPanel()">✕</button>
+        <div id="info-content"></div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

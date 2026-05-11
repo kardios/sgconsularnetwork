@@ -1,0 +1,2507 @@
+[
+  {
+    "name": "Singapore Embassy in Brasilia",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Federative Republic of Brazil",
+    "city": "Brasilia",
+    "address": "SHIS QL 24, Conjunto 03, Casa 11, Lago Sul, CEP 71665-035, Brasilia",
+    "phone": "+55-61-2191 6565",
+    "email": "singemb_bsb@mfa.sg",
+    "website": "https://brasilia.mfa.gov.sg",
+    "emergency": "+55 (61) 99584 9583",
+    "hours": {
+      "timezone": "America/Sao_Paulo",
+      "schedule": {
+        "mon": "09:00-18:00",
+        "tue": "09:00-18:00",
+        "wed": "09:00-18:00",
+        "thu": "09:00-18:00",
+        "fri": "09:00-18:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -15.7939869,
+    "lng": -47.8828,
+    "coverage": [
+      "Federative Republic of Brazil"
+    ]
+  },
+  {
+    "name": "Singapore Consulate in New York",
+    "region": "Global",
+    "type": "Consulate",
+    "country": "United States of America",
+    "city": "New York",
+    "address": "318 East 48th Street, New York, NY10017",
+    "phone": "+1-212-223-3331",
+    "email": "singcon_nyc@mfa.sg",
+    "website": "https://newyork-consulate.mfa.gov.sg",
+    "emergency": "+1 212 223 3331 ext 151",
+    "hours": {
+      "timezone": "America/New_York",
+      "schedule": {
+        "mon": "09:00-13:00",
+        "tue": "09:00-13:00",
+        "wed": "09:00-13:00",
+        "thu": "09:00-13:00",
+        "fri": "09:00-13:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 40.7127281,
+    "lng": -74.0060152,
+    "coverage": [
+      "United States of America"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in San Francisco",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "United States of America",
+    "city": "San Francisco",
+    "address": "595 Market Street Suite 2450, San Francisco, CA 94105-2846, USA",
+    "phone": "+1-415-543-4775",
+    "email": "singcg_sfo@mfa.sg",
+    "website": "https://sanfrancisco.mfa.gov.sg",
+    "emergency": "+1 415 290 9000",
+    "hours": {
+      "timezone": "America/Los_Angeles",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 37.7879363,
+    "lng": -122.4075201,
+    "coverage": [
+      "United States of America"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Washington DC",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "United States of America",
+    "city": "Washington DC",
+    "address": "3501 International Place, NW, Washington DC 20008",
+    "phone": "+1-202-537-3100",
+    "email": "singemb_was@mfa.sg",
+    "website": "https://washington.mfa.gov.sg",
+    "emergency": "+1-202-537-3100 Ext 140",
+    "hours": {
+      "timezone": "America/New_York",
+      "schedule": {
+        "mon": "09:00-13:00,14:00-17:30",
+        "tue": "09:00-13:00,14:00-17:30",
+        "wed": "09:00-13:00,14:00-17:30",
+        "thu": "09:00-13:00,14:00-17:30",
+        "fri": "09:00-13:00,14:00-17:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 38.9427759,
+    "lng": -77.0653643,
+    "coverage": [
+      "United States of America"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate in Miami",
+    "region": "Global",
+    "type": "Honorary Consulate",
+    "country": "United States of America",
+    "city": "Miami",
+    "address": "1515 Sunset Drive, Suite No. 44, Coral Gables, FL 33143",
+    "phone": "+1-305-858-4225",
+    "email": "info@sg-miami-consulate.org",
+    "website": "https://miami.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "America/New_York",
+      "schedule": {
+        "mon": "09:00-14:30",
+        "tue": "09:00-14:30",
+        "wed": "09:00-14:30",
+        "thu": "09:00-14:30",
+        "fri": "09:00-14:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 25.7741566,
+    "lng": -80.1935973,
+    "coverage": [
+      "United States of America"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Toronto",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Canada",
+    "city": "Toronto",
+    "address": "95 Barber Greene Rd, Suite 100, Toronto, ON M3C 3E9",
+    "phone": "+1-416-446-5052",
+    "email": "torsgmfa@gmail.com",
+    "website": "https://toronto.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "America/Toronto",
+      "schedule": {
+        "mon": "09:00-17:00",
+        "tue": "09:00-17:00",
+        "wed": "09:00-17:00",
+        "thu": "09:00-17:00",
+        "fri": "09:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 43.6534817,
+    "lng": -79.3839347,
+    "coverage": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Vancouver",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Canada",
+    "city": "Vancouver",
+    "address": "Suite 1405 - 1166 Alberni Street, Vancouver, BC V6E 3Z3",
+    "phone": "+604-622-5281",
+    "email": "vansgmfa@gmail.com",
+    "website": "https://vancouver.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "America/Vancouver",
+      "schedule": {
+        "mon": "09:00-12:00",
+        "tue": "09:00-12:00",
+        "wed": "09:00-12:00",
+        "thu": "09:00-12:00",
+        "fri": "09:00-12:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 49.2608724,
+    "lng": -123.113952,
+    "coverage": [
+      "Canada"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Santiago",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Chile",
+    "city": "Santiago",
+    "address": "El Regidor 66, 10th Floor, Las Condes, Santiago",
+    "phone": "+56-2-2787-6034",
+    "email": "singapore@alessandri.cl",
+    "website": "https://santiago.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "America/Santiago",
+      "schedule": {
+        "mon": "09:15-13:15,15:00-17:15",
+        "tue": "09:15-13:15,15:00-17:15",
+        "wed": "09:15-13:15,15:00-17:15",
+        "thu": "09:15-13:15,15:00-17:15",
+        "fri": "09:15-13:15,15:00-17:15",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -33.4376995,
+    "lng": -70.6510671,
+    "coverage": [
+      "Chile"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate in Bogota",
+    "region": "Global",
+    "type": "Honorary Consulate",
+    "country": "Colombia",
+    "city": "Bogota",
+    "address": "Calle 70 Bis # 4-41, Primer Piso, Bogot\u00e1, D.C.",
+    "phone": "+57 601 346 2011",
+    "email": "cumana@bu.com.co",
+    "website": "https://bogota.mfa.gov.sg",
+    "emergency": "+65 6379 8000",
+    "hours": {
+      "timezone": "America/Bogota",
+      "schedule": {
+        "mon": "09:00-16:00",
+        "tue": "09:00-16:00",
+        "wed": "09:00-16:00",
+        "thu": "09:00-16:00",
+        "fri": "09:00-16:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 4.6533817,
+    "lng": -74.0836331,
+    "coverage": [
+      "Colombia"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate in Mexico City",
+    "region": "Global",
+    "type": "Honorary Consulate",
+    "country": "Mexico",
+    "city": "Mexico City",
+    "address": "Rub\u00e9n Dar\u00edo No. 281 Piso 10, Col. Bosque de Chapultepec, Ciudad de M\u00e9xico",
+    "phone": "001-52-(55) 9150-7802",
+    "email": "henkel@sirva.com.mx",
+    "website": "https://mexico-city.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "America/Mexico_City",
+      "schedule": {
+        "mon": "10:00-15:00",
+        "tue": "10:00-15:00",
+        "wed": "10:00-15:00",
+        "thu": "10:00-15:00",
+        "fri": "10:00-15:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 19.4326296,
+    "lng": -99.1331785,
+    "coverage": [
+      "Mexico"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Lima",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Peru",
+    "city": "Lima",
+    "address": "Avenida Javier Prado Oeste 757 OF. 1605, Magdalena Del Mar",
+    "phone": "+511 377 7870",
+    "email": "hcgperu.sg@gmail.com",
+    "website": "https://lima.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "America/Lima",
+      "schedule": {
+        "mon": "10:00-12:00",
+        "tue": "10:00-12:00",
+        "wed": "10:00-12:00",
+        "thu": "10:00-12:00",
+        "fri": "10:00-12:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -12.09294,
+    "lng": -77.06132,
+    "coverage": [
+      "Peru"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Beijing",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "People's Republic of China",
+    "city": "Beijing",
+    "address": "No. 1 Xiu Shui Bei Jie, Jian Guo Men Wai, Chao Yang District, Beijing 100600",
+    "phone": "+86-10-6532-1115",
+    "email": "singemb_bej@mfa.sg",
+    "website": "http://www.mfa.gov.sg/beijing",
+    "emergency": "+86-1391-0755-251",
+    "hours": {
+      "timezone": "Asia/Shanghai",
+      "schedule": {
+        "mon": "08:30-12:00,13:00-17:00",
+        "tue": "08:30-12:00,13:00-17:00",
+        "wed": "08:30-12:00,13:00-17:00",
+        "thu": "08:30-12:00,13:00-17:00",
+        "fri": "08:30-12:00,13:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 39.9057136,
+    "lng": 116.3912972,
+    "coverage": [
+      "People's Republic of China"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Chengdu",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "People's Republic of China",
+    "city": "Chengdu",
+    "address": "Level 30-01 Yanlord Landmark Office Tower, No 1 Section 2 Renmin South Road, Jinjiang District, Chengdu 610016",
+    "phone": "+86-28-8652 7222",
+    "email": "singcg_cgu@mfa.sg",
+    "website": "https://chengdu.mfa.gov.sg",
+    "emergency": "+86-1390-807-3562",
+    "hours": {
+      "timezone": "Asia/Shanghai",
+      "schedule": {
+        "mon": "08:30-12:00,13:00-17:00",
+        "tue": "08:30-12:00,13:00-17:00",
+        "wed": "08:30-12:00,13:00-17:00",
+        "thu": "08:30-12:00,13:00-17:00",
+        "fri": "08:30-12:00,13:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 30.659867,
+    "lng": 104.063315,
+    "coverage": [
+      "People's Republic of China"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Guangzhou",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "People's Republic of China",
+    "city": "Guangzhou",
+    "address": "Unit 2418, CITIC Plaza Office Tower, 233 Tianhe North Road, Tianhe District, Guangzhou 510613",
+    "phone": "+86-20-3891-2345",
+    "email": "singcg_gzu@mfa.sg",
+    "website": "https://guangzhou.mfa.gov.sg",
+    "emergency": "+86-1392-229-6253",
+    "hours": {
+      "timezone": "Asia/Shanghai",
+      "schedule": {
+        "mon": "08:30-12:30,13:30-17:00",
+        "tue": "08:30-12:30,13:30-17:00",
+        "wed": "08:30-12:30,13:30-17:00",
+        "thu": "08:30-12:30,13:30-17:00",
+        "fri": "08:30-12:30,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 23.1288454,
+    "lng": 113.2590064,
+    "coverage": [
+      "People's Republic of China"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Shanghai",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "People's Republic of China",
+    "city": "Shanghai",
+    "address": "89 Wanshan Road, Shanghai 200336",
+    "phone": "+86-21-6278-5566",
+    "email": "singcg_sha@mfa.sg",
+    "website": "https://shanghai.mfa.gov.sg",
+    "emergency": "+86-1380-194-9439",
+    "hours": {
+      "timezone": "Asia/Shanghai",
+      "schedule": {
+        "mon": "08:30-12:00,13:00-17:00",
+        "tue": "08:30-12:00,13:00-17:00",
+        "wed": "08:30-12:00,13:00-17:00",
+        "thu": "08:30-12:00,13:00-17:00",
+        "fri": "08:30-12:00,13:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 31.2056532,
+    "lng": 121.3965619,
+    "coverage": [
+      "People's Republic of China"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Xiamen",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "People's Republic of China",
+    "city": "Xiamen",
+    "address": "No. 189, Xiahe Road, Units 05-07/08, The Bank Centre, Xiamen, 361003",
+    "phone": "+86-592-268-4691",
+    "email": "singcg_xmn@mfa.sg",
+    "website": "https://xiamen.mfa.gov.sg",
+    "emergency": "+86-138-0607-1221",
+    "hours": {
+      "timezone": "Asia/Shanghai",
+      "schedule": {
+        "mon": "08:30-12:30,13:30-17:00",
+        "tue": "08:30-12:30,13:30-17:00",
+        "wed": "08:30-12:30,13:30-17:00",
+        "thu": "08:30-12:30,13:30-17:00",
+        "fri": "08:30-12:30,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 24.4801069,
+    "lng": 118.0853479,
+    "coverage": [
+      "People's Republic of China"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Hong Kong",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "People's Republic of China",
+    "city": "Hong Kong",
+    "address": "Units 901-2, 9th Floor, Admiralty Centre Tower 1, 18 Harcourt Road, Hong Kong",
+    "phone": "+852 2527-2212",
+    "email": "singcg_hkg@mfa.sg",
+    "website": "https://hongkong.mfa.gov.sg",
+    "emergency": "+852 9466-1251",
+    "hours": {
+      "timezone": "Asia/Hong_Kong",
+      "schedule": {
+        "mon": "09:00-12:30,14:00-17:30",
+        "tue": "09:00-12:30,14:00-17:30",
+        "wed": "09:00-12:30,14:00-17:30",
+        "thu": "09:00-12:30,14:00-17:30",
+        "fri": "09:00-12:30,14:00-17:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 22.3492155,
+    "lng": 114.1857978,
+    "coverage": [
+      "People's Republic of China"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Tokyo",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Japan",
+    "city": "Tokyo",
+    "address": "5-12-3- Roppongi, Minato-ku, Tokyo 106-0032",
+    "phone": "+81-3-3586-9111",
+    "email": "singemb_tyo@mfa.sg",
+    "website": "https://tokyo.mfa.gov.sg",
+    "emergency": "+81-90-5258-3252",
+    "hours": {
+      "timezone": "Asia/Tokyo",
+      "schedule": {
+        "mon": "09:00-12:30,13:30-17:30",
+        "tue": "09:00-12:30,13:30-17:30",
+        "wed": "09:00-12:30,13:30-17:30",
+        "thu": "09:00-12:30,13:30-17:30",
+        "fri": "09:00-12:30,13:30-17:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 35.6601174,
+    "lng": 139.7352804,
+    "coverage": [
+      "Japan"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Nagoya",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Japan",
+    "city": "Nagoya",
+    "address": "3-21-19, Aoi, Naka-ku, Nagoya, 460-0006",
+    "phone": "+81-52-935-1258",
+    "email": "hcg@menicon.co.jp",
+    "website": "https://nagoya.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Asia/Tokyo",
+      "schedule": {
+        "mon": "09:30-11:30,13:30-15:00",
+        "tue": "09:30-11:30,13:30-15:00",
+        "wed": "09:30-11:30,13:30-15:00",
+        "thu": "09:30-11:30,13:30-15:00",
+        "fri": "09:30-11:30,13:30-15:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 35.1851045,
+    "lng": 136.8998438,
+    "coverage": [
+      "Japan"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Osaka",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Japan",
+    "city": "Osaka",
+    "address": "3-77 Oimatsu-cho, Sakai-ku, Sakai City, Osaka 590-8577",
+    "phone": "+81-72-223-6911",
+    "email": "HCG-Osaka@sic.shimano.co.jp",
+    "website": "https://osaka.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Asia/Tokyo",
+      "schedule": {
+        "mon": "09:00-11:30",
+        "tue": "09:00-11:30",
+        "wed": "09:00-11:30",
+        "thu": "09:00-11:30",
+        "fri": "09:00-11:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 34.6937569,
+    "lng": 135.5014539,
+    "coverage": [
+      "Japan"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Seoul",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Republic of Korea",
+    "city": "Seoul",
+    "address": "28th Fl. Seoul Finance Center, 136, Sejong-daero, Jung-gu, Seoul 04520",
+    "phone": "+82-2-774-2464",
+    "email": "singemb_seo@mfa.sg",
+    "website": "https://seoul.mfa.gov.sg",
+    "emergency": "+82-10-7204-6240",
+    "hours": {
+      "timezone": "Asia/Seoul",
+      "schedule": {
+        "mon": "09:00-12:30,13:30-17:30",
+        "tue": "09:00-12:30,13:30-17:30",
+        "wed": "09:00-12:30,13:30-17:30",
+        "thu": "09:00-12:30,13:30-17:30",
+        "fri": "09:00-12:30,13:30-17:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 37.5666791,
+    "lng": 126.9782914,
+    "coverage": [
+      "Mongolia",
+      "Republic of Korea"
+    ]
+  },
+  {
+    "name": "Singapore Trade Office in Taipei",
+    "region": "Global",
+    "type": "Trade Office",
+    "country": "Taiwan",
+    "city": "Taipei",
+    "address": "9th Floor, No. 85, Jen Ai Road, Section 4, Taipei 106, Taiwan",
+    "phone": "+886-2-2772-1940",
+    "email": "singtr_tpe@mfa.sg",
+    "website": "https://taipei.mfa.gov.sg",
+    "emergency": "+886-953-532-638",
+    "hours": {
+      "timezone": "Asia/Taipei",
+      "schedule": {
+        "mon": "09:00-12:30,13:30-17:30",
+        "tue": "09:00-12:30,13:30-17:30",
+        "wed": "09:00-12:30,13:30-17:30",
+        "thu": "09:00-12:30,13:30-17:30",
+        "fri": "09:00-12:30,13:30-17:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 25.0375198,
+    "lng": 121.5636796,
+    "coverage": [
+      "Taiwan"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in Canberra",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "Australia",
+    "city": "Canberra",
+    "address": "17 Forster Crescent, Yarralumla, ACT 2600",
+    "phone": "+61-2-6271-2000",
+    "email": "singhc_cbr@mfa.sg",
+    "website": "https://canberra.mfa.gov.sg",
+    "emergency": "+61-414-733-944",
+    "hours": {
+      "timezone": "Australia/Canberra",
+      "schedule": {
+        "mon": "08:30-17:00",
+        "tue": "08:30-17:00",
+        "wed": "08:30-17:00",
+        "thu": "08:30-17:00",
+        "fri": "08:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -35.3032012,
+    "lng": 149.1168109,
+    "coverage": [
+      "Australia"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in Wellington",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "New Zealand",
+    "city": "Wellington",
+    "address": "17 Kabul Street, Khandallah, Wellington 6035",
+    "phone": "+64-4-470-0850",
+    "email": "singhc_wlg@mfa.sg",
+    "website": "https://wellington.mfa.gov.sg",
+    "emergency": "+64-21-280-3161",
+    "hours": {
+      "timezone": "Pacific/Auckland",
+      "schedule": {
+        "mon": "09:00-13:00,13:45-17:00",
+        "tue": "09:00-13:00,13:45-17:00",
+        "wed": "09:00-13:00,13:45-17:00",
+        "thu": "09:00-13:00,13:45-17:00",
+        "fri": "09:00-13:00,13:45-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -41.2546362,
+    "lng": 174.7860094,
+    "coverage": [
+      "New Zealand"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in New Delhi",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "India",
+    "city": "New Delhi",
+    "address": "E-6 Chandragupta Marg, Chanakyapuri, New Delhi 110021",
+    "phone": "+91-11-4600-0800",
+    "email": "singhc_del@mfa.sg",
+    "website": "https://new-delhi.mfa.gov.sg",
+    "emergency": "+91-981-020-3595",
+    "hours": {
+      "timezone": "Asia/Kolkata",
+      "schedule": {
+        "mon": "09:00-13:00,13:30-17:00",
+        "tue": "09:00-13:00,13:30-17:00",
+        "wed": "09:00-13:00,13:30-17:00",
+        "thu": "09:00-13:00,13:30-17:00",
+        "fri": "09:00-13:00,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 28.5892288,
+    "lng": 77.1785393,
+    "coverage": [
+      "Bhutan",
+      "Nepal",
+      "India"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Chennai",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "India",
+    "city": "Chennai",
+    "address": "9th floor, Prestige Polygon, Anna Salai, Teynampet, Chennai 600035",
+    "phone": "+91-44-2432-0050",
+    "email": "singcon_maa@mfa.sg",
+    "website": "https://chennai.mfa.gov.sg",
+    "emergency": "+91-984-003-3136",
+    "hours": {
+      "timezone": "Asia/Kolkata",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 13.0836939,
+    "lng": 80.270186,
+    "coverage": [
+      "India"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Mumbai",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "India",
+    "city": "Mumbai",
+    "address": "152, 14th Floor, Maker Chambers IV, 222, Jamnalal Bajaj Road, Nariman Point, Mumbai 400-021",
+    "phone": "+91 22-6150-2900",
+    "email": "singcon_bom@mfa.sg",
+    "website": "https://mumbai.mfa.gov.sg",
+    "emergency": "+91-82910 32836",
+    "hours": {
+      "timezone": "Asia/Kolkata",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 19.054999,
+    "lng": 72.8692035,
+    "coverage": [
+      "India"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in Dhaka",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "address": "Ventura Avenue, 5th floor, 8/B Gulshan Avenue, Dhaka 1212",
+    "phone": "+880-2-222-280-404",
+    "email": "singhc_dha@mfa.sg",
+    "website": "https://dhaka.mfa.gov.sg",
+    "emergency": "+880-181-955-7146",
+    "hours": {
+      "timezone": "Asia/Dhaka",
+      "schedule": {
+        "mon": "09:00-17:00",
+        "tue": "09:00-17:00",
+        "wed": "09:00-17:00",
+        "thu": "09:00-17:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "09:00-17:00"
+      },
+      "by_appointment": false
+    },
+    "lat": 23.7643863,
+    "lng": 90.3890144,
+    "coverage": [
+      "Bangladesh"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in Bandar Seri Begawan",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "Negara Brunei Darussalam",
+    "city": "Bandar Seri Begawan",
+    "address": "No. 8, Simpang 74, Jalan Subok, Bandar Seri Begawan BD2717",
+    "phone": "+673-2262-741",
+    "email": "singhc_bwn@mfa.sg",
+    "website": "https://brunei.mfa.gov.sg",
+    "emergency": "+673-8751-778",
+    "hours": {
+      "timezone": "Asia/Brunei",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 4.8895453,
+    "lng": 114.9417574,
+    "coverage": [
+      "Negara Brunei Darussalam"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Phnom Penh",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Cambodia",
+    "city": "Phnom Penh",
+    "address": "129 Norodom Boulevard, Sangkat Chaktomuk, Khan Daun Penh, 120207 Phnom Penh",
+    "phone": "+855-23-221-875",
+    "email": "singemb_pnh@mfa.sg",
+    "website": "https://phnompenh.mfa.gov.sg",
+    "emergency": "+855-977017371",
+    "hours": {
+      "timezone": "Asia/Phnom_Penh",
+      "schedule": {
+        "mon": "08:00-12:30,14:00-17:00",
+        "tue": "08:00-12:30,14:00-17:00",
+        "wed": "08:00-12:30,14:00-17:00",
+        "thu": "08:00-12:30,14:00-17:00",
+        "fri": "08:00-12:30,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 11.5585045,
+    "lng": 104.9272158,
+    "coverage": [
+      "Cambodia"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Jakarta",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Indonesia",
+    "city": "Jakarta",
+    "address": "Blok X/4, Kav No. 2, Jln H R Rasuna Said, Kuningan, Jakarta Selatan 12950",
+    "phone": "+62 21 5091 5400",
+    "email": "singemb_jkt@mfa.sg",
+    "website": "https://jakarta.mfa.gov.sg",
+    "emergency": "+62 21 5091 5400",
+    "hours": {
+      "timezone": "Asia/Jakarta",
+      "schedule": {
+        "mon": "08:30-12:30,13:30-17:00",
+        "tue": "08:30-12:30,13:30-17:00",
+        "wed": "08:30-12:30,13:30-17:00",
+        "thu": "08:30-12:30,13:30-17:00",
+        "fri": "08:30-12:30,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -6.1754049,
+    "lng": 106.827168,
+    "coverage": [
+      "Indonesia"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Batam",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "Indonesia",
+    "city": "Batam",
+    "address": "Level 3 Panbil Residence, Jalan Ahmad Yani, Muka Kuning, Batam 29433",
+    "phone": "+627783720000",
+    "email": "singcon_bth@mfa.sg",
+    "website": "https://batam.mfa.gov.sg",
+    "emergency": "+62 811 7049 084",
+    "hours": {
+      "timezone": "Asia/Jakarta",
+      "schedule": {
+        "mon": "08:30-12:30,13:30-17:00",
+        "tue": "08:30-12:30,13:30-17:00",
+        "wed": "08:30-12:30,13:30-17:00",
+        "thu": "08:30-12:30,13:30-17:00",
+        "fri": "08:30-12:30,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 1.1030815,
+    "lng": 104.0383696,
+    "coverage": [
+      "Indonesia"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Medan",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "Indonesia",
+    "city": "Medan",
+    "address": "Suite No 2 - 6, 11th Floor, Forum Nine Office, No. 9 Jalan Imam Bonjol, Medan 20112",
+    "phone": "+62-61-8050-1500",
+    "email": "sporeconsulatemedan@mfa.sg",
+    "website": "https://medan.mfa.gov.sg",
+    "emergency": "+62-811-6170-339",
+    "hours": {
+      "timezone": "Asia/Jakarta",
+      "schedule": {
+        "mon": "08:30-17:00",
+        "tue": "08:30-17:00",
+        "wed": "08:30-17:00",
+        "thu": "08:30-17:00",
+        "fri": "08:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 3.5894617,
+    "lng": 98.6741623,
+    "coverage": [
+      "Indonesia"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Vientiane",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Lao People's Democratic Republic",
+    "city": "Vientiane",
+    "address": "Ban Watnak, Unit 4 Thadeua Road, Km3, Sisattanak District, Vientiane Capital",
+    "phone": "+856-21-353-939",
+    "email": "singemb_vte@mfa.sg",
+    "website": "https://vientiane.mfa.gov.sg",
+    "emergency": "+856-20-5559-9059",
+    "hours": {
+      "timezone": "Asia/Vientiane",
+      "schedule": {
+        "mon": "08:30-12:00,13:00-17:00",
+        "tue": "08:30-12:00,13:00-17:00",
+        "wed": "08:30-12:00,13:00-17:00",
+        "thu": "08:30-12:00,13:00-17:00",
+        "fri": "08:30-12:00,13:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 17.9640988,
+    "lng": 102.6133707,
+    "coverage": [
+      "Lao People's Democratic Republic"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in Kuala Lumpur",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "Malaysia",
+    "city": "Kuala Lumpur",
+    "address": "209, Jalan Tun Razak, 50400 Kuala Lumpur",
+    "phone": "+60-3-2161-6277",
+    "email": "singhc_kul@mfa.sg",
+    "website": "https://kl.mfa.gov.sg",
+    "emergency": "+60-3-2161-6277",
+    "hours": {
+      "timezone": "Asia/Kuala_Lumpur",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 3.1554271,
+    "lng": 101.721061,
+    "coverage": [
+      "Malaysia"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Johor Bahru",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "Malaysia",
+    "city": "Johor Bahru",
+    "address": "Level 29, MVS South Tower, Mid Valley Southkey, Persiaran Southkey 1, Kota Southkey, 80150 Johor Bahru",
+    "phone": "+60-7-335-0130",
+    "email": "singcon_jhb@mfa.sg",
+    "website": "https://jb.mfa.gov.sg",
+    "emergency": "+60-19-791-1166",
+    "hours": {
+      "timezone": "Asia/Kuala_Lumpur",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 1.4581986,
+    "lng": 103.7649059,
+    "coverage": [
+      "Malaysia"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Yangon",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Myanmar",
+    "city": "Yangon",
+    "address": "238 Dhamazedi Road, Bahan Township, Yangon",
+    "phone": "+95-1-9-559-001",
+    "email": "singemb_ygn@mfa.sg",
+    "website": "https://yangon.mfa.gov.sg",
+    "emergency": "09-250-863-840",
+    "hours": {
+      "timezone": "Asia/Yangon",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 16.7967129,
+    "lng": 96.1609916,
+    "coverage": [
+      "Myanmar"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Manila",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Philippines",
+    "city": "Manila",
+    "address": "505 Rizal Drive, Bonifacio Global City, 1634 Taguig City, Metro Manila",
+    "phone": "+63-2-8856-9922",
+    "email": "singemb_mnl@mfa.sg",
+    "website": "https://manila.mfa.gov.sg",
+    "emergency": "+63-917-860-4740",
+    "hours": {
+      "timezone": "Asia/Manila",
+      "schedule": {
+        "mon": "08:30-17:00",
+        "tue": "08:30-17:00",
+        "wed": "08:30-17:00",
+        "thu": "08:30-17:00",
+        "fri": "08:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 14.5904492,
+    "lng": 120.9803621,
+    "coverage": [
+      "Philippines"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Bangkok",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Thailand",
+    "city": "Bangkok",
+    "address": "129 South Sathorn Road, Thung Maha Mek, Sathorn, Bangkok 10120",
+    "phone": "+66-2-348-6700",
+    "email": "singemb_bkk@mfa.sg",
+    "website": "https://bangkok.mfa.gov.sg",
+    "emergency": "+66-81-844-3580",
+    "hours": {
+      "timezone": "Asia/Bangkok",
+      "schedule": {
+        "mon": "09:00-17:00",
+        "tue": "09:00-17:00",
+        "wed": "09:00-17:00",
+        "thu": "09:00-17:00",
+        "fri": "09:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 13.7524938,
+    "lng": 100.4935089,
+    "coverage": [
+      "Thailand"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Dili",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Timor-Leste",
+    "city": "Dili",
+    "address": "Unit 344-347, Level 3 Timor Plaza, Av. Presidente Nicolau Lobato, Comoro, Dili",
+    "phone": "+670 331 0260",
+    "email": "singemb_dil@mfa.sg",
+    "website": "https://dili.mfa.gov.sg",
+    "emergency": "+65 6379 8800",
+    "hours": {
+      "timezone": "Asia/Dili",
+      "schedule": {
+        "mon": "09:00-17:30",
+        "tue": "09:00-17:30",
+        "wed": "09:00-17:30",
+        "thu": "09:00-17:30",
+        "fri": "09:00-17:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -8.5536809,
+    "lng": 125.5784093,
+    "coverage": [
+      "Timor-Leste"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Hanoi",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Vietnam",
+    "city": "Hanoi",
+    "address": "No. 41 & 43, Tran Phu Street, Ba Dinh District, Hanoi",
+    "phone": "+84-24-3848-9168",
+    "email": "singemb_han@mfa.sg",
+    "website": "https://hanoi.mfa.gov.sg",
+    "emergency": "+84-904-696-589",
+    "hours": {
+      "timezone": "Asia/Ho_Chi_Minh",
+      "schedule": {
+        "mon": "08:30-12:00,13:00-17:00",
+        "tue": "08:30-12:00,13:00-17:00",
+        "wed": "08:30-12:00,13:00-17:00",
+        "thu": "08:30-12:00,13:00-17:00",
+        "fri": "08:30-12:00,13:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 21.0283334,
+    "lng": 105.854041,
+    "coverage": [
+      "Vietnam"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Ho Chi Minh City",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "Vietnam",
+    "city": "Ho Chi Minh City",
+    "address": "The Saigon Centre Tower 2, #11-05, 67 Le Loi Boulevard, District 1, Ho Chi Minh City",
+    "phone": "+84-28-3822-5174",
+    "email": "singcg_hcm@mfa.sg",
+    "website": "https://hochiminhcity.mfa.gov.sg",
+    "emergency": "+84-903-113-500",
+    "hours": {
+      "timezone": "Asia/Ho_Chi_Minh",
+      "schedule": {
+        "mon": "08:30-12:00,13:00-17:00",
+        "tue": "08:30-12:00,13:00-17:00",
+        "wed": "08:30-12:00,13:00-17:00",
+        "thu": "08:30-12:00,13:00-17:00",
+        "fri": "08:30-12:00,13:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 10.7737261,
+    "lng": 106.7166008,
+    "coverage": [
+      "Vietnam"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Port Moresby",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Papua New Guinea",
+    "city": "Port Moresby",
+    "address": "PO Box 683, Waterfront, Konedobu-125, Sect: 62, Lot: 10, Davetari Drive, Port Moresby",
+    "phone": "+675 321 1732",
+    "email": "singaporecgpng@gmail.com",
+    "website": "https://port-moresby.mfa.gov.sg",
+    "emergency": "+65 6379 8000",
+    "hours": {
+      "timezone": "Pacific/Port_Moresby",
+      "schedule": {
+        "mon": "09:00-15:00",
+        "tue": "09:00-15:00",
+        "wed": "09:00-15:00",
+        "thu": "09:00-15:00",
+        "fri": "09:00-15:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -9.4743301,
+    "lng": 147.1599504,
+    "coverage": [
+      "Papua New Guinea"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Colombo",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Sri Lanka",
+    "city": "Colombo",
+    "address": "c/o Nawaloka Holdings (Pvt) Ltd, No 73, Sir James Peiris Mawatha, Colombo 02",
+    "phone": "+94 11 55 77 300",
+    "email": "nawaloka@slt.lk",
+    "website": "https://colombo.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Asia/Colombo",
+      "schedule": {
+        "mon": "09:00-16:00",
+        "tue": "09:00-16:00",
+        "wed": "09:00-16:00",
+        "thu": "09:00-16:00",
+        "fri": "09:00-16:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 6.9388614,
+    "lng": 79.8542005,
+    "coverage": [
+      "Sri Lanka"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Karachi",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Pakistan",
+    "city": "Karachi",
+    "address": "Lakson Square Building No 2, Sarwar Shaheed Road, 74200, Karachi",
+    "phone": "+92-21-3568-6419",
+    "email": "singaporecg@cyber.net.pk",
+    "website": "https://karachi.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Asia/Karachi",
+      "schedule": {
+        "mon": "09:00-13:00,14:00-17:00",
+        "tue": "09:00-13:00,14:00-17:00",
+        "wed": "09:00-13:00,14:00-17:00",
+        "thu": "09:00-13:00,14:00-17:00",
+        "fri": "09:00-12:30,14:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 24.8546842,
+    "lng": 67.0207055,
+    "coverage": [
+      "Pakistan"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Moscow",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Russian Federation",
+    "city": "Moscow",
+    "address": "Pereulok Kamennaya Sloboda 5, 121099 Moscow",
+    "phone": "+7 499-241-3913",
+    "email": "singemb_mow@mfa.sg",
+    "website": "https://moscow.mfa.gov.sg",
+    "emergency": "+7-906-009-0069",
+    "hours": {
+      "timezone": "Europe/Moscow",
+      "schedule": {
+        "mon": "09:00-13:00,14:00-17:30",
+        "tue": "09:00-13:00,14:00-17:30",
+        "wed": "09:00-13:00,14:00-17:30",
+        "thu": "09:00-13:00,14:00-17:30",
+        "fri": "09:00-13:00,14:00-17:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 55.7499033,
+    "lng": 37.5855975,
+    "coverage": [
+      "Russian Federation"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Brussels",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Belgium",
+    "city": "Brussels",
+    "address": "85 Avenue Franklin Roosevelt, B-1050 Brussels",
+    "phone": "+32-2-660-2979",
+    "email": "singemb_bru@mfa.sg",
+    "website": "https://brussels.mfa.gov.sg",
+    "emergency": "+32-475-618-265",
+    "hours": {
+      "timezone": "Europe/Brussels",
+      "schedule": {
+        "mon": "08:30-12:30,13:30-17:00",
+        "tue": "08:30-12:30,13:30-17:00",
+        "wed": "08:30-12:30,13:30-17:00",
+        "thu": "08:30-12:30,13:30-17:00",
+        "fri": "08:30-12:30,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 50.8467372,
+    "lng": 4.352493,
+    "coverage": [
+      "Luxembourg",
+      "Netherlands",
+      "Belgium"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Paris",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "France",
+    "city": "Paris",
+    "address": "16 Rue Murillo, 75008 Paris",
+    "phone": "+33-1-5679-6800",
+    "email": "Singemb_Par@mfa.sg",
+    "website": "https://paris.mfa.gov.sg",
+    "emergency": "+33-6-7503-2555",
+    "hours": {
+      "timezone": "Europe/Paris",
+      "schedule": {
+        "mon": "09:30-13:00,14:00-17:00",
+        "tue": "09:30-13:00,14:00-17:00",
+        "wed": "09:30-13:00,14:00-17:00",
+        "thu": "09:30-13:00,14:00-17:00",
+        "fri": "09:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 48.8778761,
+    "lng": 2.3074507,
+    "coverage": [
+      "Portugal",
+      "France"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Berlin",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Federal Republic of Germany",
+    "city": "Berlin",
+    "address": "Vo\u00dfstra\u00dfe 17, 10117 Berlin",
+    "phone": "+49-(30) 2263-430",
+    "email": "singemb_ber@mfa.sg",
+    "website": "https://berlin.mfa.gov.sg",
+    "emergency": "+49-152-2341-2182",
+    "hours": {
+      "timezone": "Europe/Berlin",
+      "schedule": {
+        "mon": "09:00-13:00,13:30-17:00",
+        "tue": "09:00-13:00,13:30-17:00",
+        "wed": "09:00-13:00,13:30-17:00",
+        "thu": "09:00-13:00,13:30-17:00",
+        "fri": "09:00-13:00,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 52.5111184,
+    "lng": 13.377752,
+    "coverage": [
+      "Federal Republic of Germany"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in London",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "United Kingdom",
+    "city": "London",
+    "address": "9 Wilton Crescent, Belgravia, London SW1X 8SP",
+    "phone": "+44-20-7235-8315",
+    "email": "singhc_lon@mfa.sg",
+    "website": "https://london.mfa.gov.sg",
+    "emergency": "+44 (0) 77 1034-8335",
+    "hours": {
+      "timezone": "Europe/London",
+      "schedule": {
+        "mon": "09:00-13:00,14:00-17:00",
+        "tue": "09:00-13:00,14:00-17:00",
+        "wed": "09:00-13:00,14:00-17:00",
+        "thu": "09:00-13:00,14:00-17:00",
+        "fri": "09:00-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 51.500252,
+    "lng": -0.156469,
+    "coverage": [
+      "Iceland",
+      "Ireland",
+      "United Kingdom"
+    ]
+  },
+  {
+    "name": "Singapore Permanent Mission in Geneva",
+    "region": "Global",
+    "type": "Permanent Mission",
+    "country": "Switzerland",
+    "city": "Geneva",
+    "address": "Avenue du Pailly 10, 1219 Ch\u00e2telaine, Geneva",
+    "phone": "+41-22-795-0101",
+    "email": "MFA_GVA_UN@mfa.gov.sg",
+    "website": "https://geneva-un.mfa.gov.sg",
+    "emergency": "+65 6379 8800",
+    "hours": {
+      "timezone": "Europe/Zurich",
+      "schedule": {
+        "mon": "08:30-13:00,14:00-17:00",
+        "tue": "08:30-13:00,14:00-17:00",
+        "wed": "08:30-13:00,14:00-17:00",
+        "thu": "08:30-13:00,14:00-17:00",
+        "fri": "08:30-13:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 46.2149634,
+    "lng": 6.1111021,
+    "coverage": [
+      "Switzerland"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Ankara",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "T\u00fcrkiye",
+    "city": "Ankara",
+    "address": "Yildizevler Mahallesi, 719. Sokak No. 5, 06550 \u00c7ankaya/Ankara",
+    "phone": "+90-312-442-4330",
+    "email": "singemb_ank@mfa.sg",
+    "website": "https://ankara.mfa.gov.sg",
+    "emergency": "+65 6379 8800",
+    "hours": {
+      "timezone": "Europe/Istanbul",
+      "schedule": {
+        "mon": "08:30-12:30,13:30-17:00",
+        "tue": "08:30-12:30,13:30-17:00",
+        "wed": "08:30-12:30,13:30-17:00",
+        "thu": "08:30-12:30,13:30-17:00",
+        "fri": "08:30-12:30,13:30-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 39.9207759,
+    "lng": 32.8540497,
+    "coverage": [
+      "T\u00fcrkiye"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Hamburg",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Federal Republic of Germany",
+    "city": "Hamburg",
+    "address": "Behn Meyer Holding AG, Ballindamm 1, 20095 Hamburg",
+    "phone": "+49-40-30299-290",
+    "email": "konsulat.singapur.hh@behnmeyer.de",
+    "website": "https://hamburg.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Berlin",
+      "schedule": {
+        "mon": "09:30-12:30",
+        "tue": "09:30-12:30",
+        "wed": "09:30-12:30",
+        "thu": "09:30-12:30",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 53.5501721,
+    "lng": 10.0013165,
+    "coverage": [
+      "Federal Republic of Germany"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Frankfurt",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Federal Republic of Germany",
+    "city": "Frankfurt",
+    "address": "c/o Oppenhoff, OpernTurm, Bockenheimer Landstra\u00dfe 2-4, 60306 Frankfurt am Main",
+    "phone": "+49 69 707 968 155",
+    "email": "HCGSingapore_FFM@oppenhoff.eu",
+    "website": "https://frankfurt.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Berlin",
+      "schedule": {
+        "mon": "closed",
+        "tue": "10:00-13:00",
+        "wed": "14:00-17:00",
+        "thu": "10:00-13:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 50.1106444,
+    "lng": 8.6820917,
+    "coverage": [
+      "Federal Republic of Germany"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Munich",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Federal Republic of Germany",
+    "city": "Munich",
+    "address": "Maximilianstra\u00dfe 32, 80539 Munich",
+    "phone": "+49-89-58801-0380",
+    "email": "info@HCSingaporeMunich.de",
+    "website": "https://munich.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Berlin",
+      "schedule": {
+        "mon": "closed",
+        "tue": "09:00-12:00",
+        "wed": "12:30-15:30",
+        "thu": "12:30-15:30",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 48.1382463,
+    "lng": 11.5834383,
+    "coverage": [
+      "Federal Republic of Germany"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Vienna",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Austria",
+    "city": "Vienna",
+    "address": "19th Floor, Absberggasse 47, 1100 Vienna",
+    "phone": "+43 664 626-1007",
+    "email": "HCG-VIENNA@sg-vienna-consulate.at",
+    "website": "https://vienna.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Vienna",
+      "schedule": {
+        "mon": "closed",
+        "tue": "08:00-16:00",
+        "wed": "08:00-16:00",
+        "thu": "08:00-16:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 48.2083537,
+    "lng": 16.3725042,
+    "coverage": [
+      "Austria"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Prague",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Czech Republic",
+    "city": "Prague",
+    "address": "Opletalova 27, 110 00 Praha 1",
+    "phone": "+420-2-240-91385",
+    "email": "singapore@honoraryconsul.cz",
+    "website": "https://prague.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Prague",
+      "schedule": {
+        "mon": "closed",
+        "tue": "09:00-12:00",
+        "wed": "closed",
+        "thu": "09:00-12:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 50.0834327,
+    "lng": 14.4322027,
+    "coverage": [
+      "Czech Republic"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Copenhagen",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "address": "Snorresgade 20, DK-2300, Copenhagen S",
+    "phone": "+45-3254-8360",
+    "email": "sincon@scan-group.dk",
+    "website": "https://copenhagen.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Copenhagen",
+      "schedule": {
+        "mon": "10:00-12:00",
+        "tue": "10:00-12:00",
+        "wed": "10:00-12:00",
+        "thu": "10:00-14:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 55.66393,
+    "lng": 12.57633,
+    "coverage": [
+      "Denmark"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Helsinki",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Finland",
+    "city": "Helsinki",
+    "address": "Planmeca Oy, Asentajankatu 6, 00880 Helsinki",
+    "phone": "+358-20-779-5534",
+    "email": "Singaporehcg@planmeca.com",
+    "website": "https://helsinki.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Helsinki",
+      "schedule": {
+        "mon": "10:00-12:00",
+        "tue": "10:00-12:00",
+        "wed": "10:00-12:00",
+        "thu": "10:00-12:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 60.1982408,
+    "lng": 25.0435977,
+    "coverage": [
+      "Finland"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Athens",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Greece",
+    "city": "Athens",
+    "address": "10-12 Kifissias Avenue, 151 25 Maroussi, Athens",
+    "phone": "+30 2106845072",
+    "email": "singapore@consulate-general.gr",
+    "website": "https://athens.mfa.gov.sg",
+    "emergency": "+65 63798000",
+    "hours": {
+      "timezone": "Europe/Athens",
+      "schedule": {
+        "mon": "11:00-16:00",
+        "tue": "11:00-16:00",
+        "wed": "11:00-16:00",
+        "thu": "11:00-16:00",
+        "fri": "11:00-16:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 38.049868,
+    "lng": 23.808875,
+    "coverage": [
+      "Greece"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate in Budapest",
+    "region": "Global",
+    "type": "Honorary Consulate",
+    "country": "Hungary",
+    "city": "Budapest",
+    "address": "Equilor Investment Ltd, Mozium Office Building, H-1026 Budapest, Pasar\u00e9ti ut 122-124.",
+    "phone": "+36 1 3919030",
+    "email": "consulate@singapore.hu",
+    "website": "https://budapest.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Budapest",
+      "schedule": {
+        "mon": "09:00-16:00",
+        "tue": "09:00-16:00",
+        "wed": "09:00-16:00",
+        "thu": "09:00-16:00",
+        "fri": "09:00-16:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 47.4813896,
+    "lng": 19.1457723,
+    "coverage": [
+      "Hungary"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Dublin",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Ireland",
+    "city": "Dublin",
+    "address": "20A Kildare Street, Dublin, Ireland D02 V6P2",
+    "phone": "+353 874914923",
+    "email": "singapore.dublin.hcg@gmail.com",
+    "website": "https://dublin.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Dublin",
+      "schedule": {
+        "mon": "09:30-16:30",
+        "tue": "09:30-16:30",
+        "wed": "09:30-16:30",
+        "thu": "09:30-16:30",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 53.3493795,
+    "lng": -6.2605593,
+    "coverage": [
+      "Ireland"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Rome",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Italy",
+    "city": "Rome",
+    "address": "Via Frattina, 89, 00187 Rome",
+    "phone": "+39-06-6994-0398",
+    "email": "hcgoffice.rome@yahoo.com",
+    "website": "https://rome.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Rome",
+      "schedule": {
+        "mon": "09:30-13:00",
+        "tue": "09:30-13:00",
+        "wed": "09:30-13:00",
+        "thu": "09:30-13:00",
+        "fri": "09:30-13:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 41.904162,
+    "lng": 12.4810585,
+    "coverage": [
+      "Italy"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate in Warsaw",
+    "region": "Global",
+    "type": "Honorary Consulate",
+    "country": "Poland",
+    "city": "Warsaw",
+    "address": "11 Nowogrodzka Street, 5th floor, 00-513 Warsaw",
+    "phone": "+48 22 447 43 00",
+    "email": "sghc.warsaw@mcps.com",
+    "website": "https://warsaw.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Warsaw",
+      "schedule": {
+        "mon": "09:00-17:00",
+        "tue": "09:00-17:00",
+        "wed": "09:00-17:00",
+        "thu": "09:00-17:00",
+        "fri": "09:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 52.2333742,
+    "lng": 21.0711489,
+    "coverage": [
+      "Poland"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate in Lisbon",
+    "region": "Global",
+    "type": "Honorary Consulate",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "address": "Avenida 25 de Abril 1974, n\u00ba 23 - 1\u00ba - IV, 2795-197 Linda-a-Velha",
+    "phone": "+351966481622",
+    "email": "singaporeportugueseconsulate@gmail.com",
+    "website": "https://lisbon.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Lisbon",
+      "schedule": {
+        "mon": "10:00-12:00,14:00-17:00",
+        "tue": "10:00-12:00,14:00-17:00",
+        "wed": "10:00-12:00,14:00-17:00",
+        "thu": "10:00-12:00,14:00-17:00",
+        "fri": "10:00-12:00,14:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 38.7077507,
+    "lng": -9.1365919,
+    "coverage": [
+      "Portugal"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Barcelona",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Spain",
+    "city": "Barcelona",
+    "address": "Carrer del Comte Salvatierra 10, 2-2 08006 Barcelona",
+    "phone": "+34 931 186 156",
+    "email": "bcn@sgconsul.com",
+    "website": "https://barcelona.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Madrid",
+      "schedule": {
+        "mon": "closed",
+        "tue": "16:00-19:00",
+        "wed": "closed",
+        "thu": "16:00-19:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 41.3825802,
+    "lng": 2.177073,
+    "coverage": [
+      "Spain"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Madrid",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Spain",
+    "city": "Madrid",
+    "address": "Avda de Bruselas, 28, 28108 Alcobendas, Madrid",
+    "phone": "+34-916-629-373",
+    "email": "hcgmadrid@fmetropoli.org",
+    "website": "https://madrid.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Madrid",
+      "schedule": {
+        "mon": "09:00-14:00",
+        "tue": "09:00-14:00",
+        "wed": "09:00-14:00",
+        "thu": "09:00-14:00",
+        "fri": "09:00-14:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 40.5306044,
+    "lng": -3.6412048,
+    "coverage": [
+      "Spain"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Istanbul",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "T\u00fcrkiye",
+    "city": "Istanbul",
+    "address": "B\u00fcy\u00fckdere Cad. No: 175, Ferko Plaza A Blok Kat:22, 34394 1.Levent, Istanbul",
+    "phone": "+90 212 339 1852",
+    "email": "info.singaporeconsul@fibaholding.com.tr",
+    "website": "https://istanbul.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Istanbul",
+      "schedule": {
+        "mon": "10:00-16:00",
+        "tue": "10:00-16:00",
+        "wed": "10:00-16:00",
+        "thu": "10:00-16:00",
+        "fri": "10:00-16:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 41.006381,
+    "lng": 28.9758715,
+    "coverage": [
+      "T\u00fcrkiye"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Oslo",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Norway",
+    "city": "Oslo",
+    "address": "Lysaker Torg 2, 1366 Lysaker, P.O box 132, 1325, Lysaker",
+    "phone": "+47-6710-9920",
+    "email": "sgconsulate@easternbulk.com",
+    "website": "https://oslo.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Europe/Oslo",
+      "schedule": {
+        "mon": "08:30-12:00",
+        "tue": "08:30-12:00",
+        "wed": "09:30-12:00",
+        "thu": "08:30-12:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 59.9133301,
+    "lng": 10.7389701,
+    "coverage": [
+      "Norway"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate in Astana",
+    "region": "Global",
+    "type": "Honorary Consulate",
+    "country": "Kazakhstan",
+    "city": "Astana",
+    "address": "16 Dostyk Street, 24th Floor, Office 15, Talan Towers Business Centre, Astana",
+    "phone": "+7 708 848 8972",
+    "email": "HCG@sg.org.kz",
+    "website": "https://astana.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Asia/Almaty",
+      "schedule": {
+        "mon": "10:00-12:30,13:30-16:00",
+        "tue": "10:00-12:30,13:30-16:00",
+        "wed": "10:00-12:30,13:30-16:00",
+        "thu": "10:00-12:30,13:30-16:00",
+        "fri": "10:00-12:30,13:30-16:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": true
+    },
+    "lat": 51.1282205,
+    "lng": 71.4306682,
+    "coverage": [
+      "Kazakhstan"
+    ]
+  },
+  {
+    "name": "Singapore High Commission in Pretoria",
+    "region": "Global",
+    "type": "High Commission",
+    "country": "South Africa",
+    "city": "Pretoria",
+    "address": "980-982 Francis Baard Street, Arcadia, Pretoria 0083",
+    "phone": "+27-12-430-6035",
+    "email": "Singhc_pry@mfa.sg",
+    "website": "https://pretoria.mfa.gov.sg",
+    "emergency": "+27-729-888-759",
+    "hours": {
+      "timezone": "Africa/Johannesburg",
+      "schedule": {
+        "mon": "08:00-13:00,14:00-16:30",
+        "tue": "08:00-13:00,14:00-16:30",
+        "wed": "08:00-13:00,14:00-16:30",
+        "thu": "08:00-13:00,14:00-16:30",
+        "fri": "08:00-13:00,14:00-16:30",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": -25.7468977,
+    "lng": 28.2244482,
+    "coverage": [
+      "Botswana",
+      "Eswatini",
+      "Lesotho",
+      "Namibia",
+      "Zimbabwe",
+      "South Africa"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Cairo",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Egypt",
+    "city": "Cairo",
+    "address": "40 Adnan Omar Sedky Street, Dokki 11511, Cairo",
+    "phone": "+20-2-3749-0468",
+    "email": "singemb_cai@mfa.sg",
+    "website": "https://cairo.mfa.gov.sg",
+    "emergency": "+20-10-9806-4130",
+    "hours": {
+      "timezone": "Africa/Cairo",
+      "schedule": {
+        "mon": "08:30-15:00",
+        "tue": "08:30-15:00",
+        "wed": "08:30-15:00",
+        "thu": "08:30-15:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "08:30-15:00"
+      },
+      "by_appointment": false
+    },
+    "lat": 30.0443879,
+    "lng": 31.2357257,
+    "coverage": [
+      "Libya",
+      "Egypt"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Tel Aviv",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Israel",
+    "city": "Tel Aviv",
+    "address": "30 HaArba\u2019a Street, South Tower, 30th Floor, Tel Aviv 6473926",
+    "phone": "+972 (0) 37289334",
+    "email": "singemb_tlv@mfa.sg",
+    "website": "https://tel-aviv.mfa.gov.sg",
+    "emergency": "+972 (0) 506976188",
+    "hours": {
+      "timezone": "Asia/Jerusalem",
+      "schedule": {
+        "mon": "09:00-12:30,13:30-17:00",
+        "tue": "09:00-12:30,13:30-17:00",
+        "wed": "09:00-12:30,13:30-17:00",
+        "thu": "09:00-12:30,13:30-17:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "09:00-12:30,13:30-17:00"
+      },
+      "by_appointment": false
+    },
+    "lat": 32.0852997,
+    "lng": 34.7818064,
+    "coverage": [
+      "Israel"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Muscat",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Oman",
+    "city": "Muscat",
+    "address": "No 2980/1, Way 2840, Hay Al Sarooj, Muscat, PO Box 57, PC103",
+    "phone": "+968 2460-7760",
+    "email": "singemb_mct@mfa.sg",
+    "website": "https://muscat.mfa.gov.sg",
+    "emergency": "+968 9910-2558",
+    "hours": {
+      "timezone": "Asia/Muscat",
+      "schedule": {
+        "mon": "08:00-15:00",
+        "tue": "08:00-15:00",
+        "wed": "08:00-15:00",
+        "thu": "08:00-15:00",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "08:00-15:00"
+      },
+      "by_appointment": false
+    },
+    "lat": 23.6123628,
+    "lng": 58.5938134,
+    "coverage": [
+      "Oman"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Doha",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Qatar",
+    "city": "Doha",
+    "address": "New West Bay Area (off Lusail Street), P O Box 24497, Doha",
+    "phone": "+974-4412-8082",
+    "email": "singemb_doh@mfa.sg",
+    "website": "https://doha.mfa.gov.sg",
+    "emergency": "+974-5548-8608",
+    "hours": {
+      "timezone": "Asia/Qatar",
+      "schedule": {
+        "mon": "08:30-15:30",
+        "tue": "08:30-15:30",
+        "wed": "08:30-15:30",
+        "thu": "08:30-15:30",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "08:30-15:30"
+      },
+      "by_appointment": false
+    },
+    "lat": 25.3108807,
+    "lng": 51.5081812,
+    "coverage": [
+      "Qatar"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Jeddah",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "Saudi Arabia",
+    "city": "Jeddah",
+    "address": "Villa No. 5, Mohammed Tawfiq Al Abbasi Street, Off Hera'a Street, Al Naeem District",
+    "phone": "+966-12-607-3980",
+    "email": "Singcg_JED@mfa.sg",
+    "website": "https://jeddah.mfa.gov.sg",
+    "emergency": "+966-50-559-6481",
+    "hours": {
+      "timezone": "Asia/Riyadh",
+      "schedule": {
+        "mon": "08:00-15:30",
+        "tue": "08:00-15:30",
+        "wed": "08:00-15:30",
+        "thu": "08:00-15:30",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "08:00-15:30"
+      },
+      "by_appointment": false
+    },
+    "lat": 21.5504432,
+    "lng": 39.1742363,
+    "coverage": [
+      "Saudi Arabia"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Riyadh",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "Saudi Arabia",
+    "city": "Riyadh",
+    "address": "Diplomatic Quarter, Riyadh",
+    "phone": "+966-11-480-3855",
+    "email": "singemb_ruh@mfa.sg",
+    "website": "https://riyadh.mfa.gov.sg",
+    "emergency": "+966-50019-1220",
+    "hours": {
+      "timezone": "Asia/Riyadh",
+      "schedule": {
+        "mon": "08:00-15:30",
+        "tue": "08:00-15:30",
+        "wed": "08:00-15:30",
+        "thu": "08:00-15:30",
+        "fri": "closed",
+        "sat": "closed",
+        "sun": "08:00-15:30"
+      },
+      "by_appointment": false
+    },
+    "lat": 24.6771034,
+    "lng": 46.6251452,
+    "coverage": [
+      "Bahrain",
+      "Saudi Arabia"
+    ]
+  },
+  {
+    "name": "Singapore Embassy in Abu Dhabi",
+    "region": "Global",
+    "type": "Embassy",
+    "country": "United Arab Emirates",
+    "city": "Abu Dhabi",
+    "address": "11, Al Nawal Street, Al Manhal, Abu Dhabi",
+    "phone": "+971-2-222-2083",
+    "email": "singemb_auh@mfa.sg",
+    "website": "https://abudhabi.mfa.gov.sg",
+    "emergency": "+65 6379 8800",
+    "hours": {
+      "timezone": "Asia/Dubai",
+      "schedule": {
+        "mon": "08:00-16:30",
+        "tue": "08:00-16:30",
+        "wed": "08:00-16:30",
+        "thu": "08:00-16:30",
+        "fri": "08:00-13:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 24.4471281,
+    "lng": 54.3658158,
+    "coverage": [
+      "United Arab Emirates"
+    ]
+  },
+  {
+    "name": "Singapore Consulate-General in Dubai",
+    "region": "Global",
+    "type": "Consulate-General",
+    "country": "United Arab Emirates",
+    "city": "Dubai",
+    "address": "Villa No 124, Street 30d, Community No. 334, Al Satwa, P O Box: 214661, Dubai",
+    "phone": "001-(971) 4 321 9498",
+    "email": "singcg_dxb@mfa.sg",
+    "website": "https://www.mfa.gov.sg/dubai",
+    "emergency": "+65 6379 8800",
+    "hours": {
+      "timezone": "Asia/Dubai",
+      "schedule": {
+        "mon": "08:00-16:30",
+        "tue": "08:00-16:30",
+        "wed": "08:00-16:30",
+        "thu": "08:00-16:30",
+        "fri": "08:00-13:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 25.0742823,
+    "lng": 55.1885387,
+    "coverage": [
+      "United Arab Emirates"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Amman",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Jordan",
+    "city": "Amman",
+    "address": "P O Box 940415, Amman 11194, Jordan, 248 Mecca Street",
+    "phone": "+962-6-551-7414",
+    "email": "consulsg@ctajo.com",
+    "website": "https://amman.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Asia/Amman",
+      "schedule": {
+        "mon": "09:00-17:00",
+        "tue": "09:00-17:00",
+        "wed": "09:00-17:00",
+        "thu": "09:00-17:00",
+        "fri": "09:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 31.9515694,
+    "lng": 35.9239625,
+    "coverage": [
+      "Jordan"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Beirut",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "address": "Center Sofil, Charles Malek Avenue, Achrafieh, Beirut, P.O.Box 166730",
+    "phone": "+961-1-334-335",
+    "email": "singaporeconsulate@cyberia.net.lb",
+    "website": "https://beirut.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Asia/Beirut",
+      "schedule": {
+        "mon": "09:00-17:00",
+        "tue": "09:00-17:00",
+        "wed": "09:00-17:00",
+        "thu": "09:00-17:00",
+        "fri": "09:00-17:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 33.8892265,
+    "lng": 35.5025585,
+    "coverage": [
+      "Lebanon"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Casablanca",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Morocco",
+    "city": "Casablanca",
+    "address": "Casablanca Nearshore Park, Shore 1 - Secteur A - 2nd floor, 1100 boulevard Al Qods, Quartier Sidi Ma\u00e2rouf, 20270 Casablanca",
+    "phone": "+212 529 045 013",
+    "email": "singaporehcg.casablanca@gmail.com",
+    "website": "https://casablanca.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Africa/Casablanca",
+      "schedule": {
+        "mon": "09:00-12:00",
+        "tue": "09:00-12:00",
+        "wed": "09:00-12:00",
+        "thu": "09:00-12:00",
+        "fri": "09:00-12:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 33.5945144,
+    "lng": -7.6200284,
+    "coverage": [
+      "Morocco"
+    ]
+  },
+  {
+    "name": "Singapore Honorary Consulate-General in Lagos",
+    "region": "Global",
+    "type": "Honorary Consulate-General",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "address": "Post Square Towers, Block A, 6th Floor, 1/3 Ologun Agbaje Street Victoria Island, Lagos",
+    "phone": "+234-201-4610818",
+    "email": "singapore.consulate@tolaram.com",
+    "website": "https://lagos.mfa.gov.sg",
+    "emergency": "+65-6379-8000",
+    "hours": {
+      "timezone": "Africa/Lagos",
+      "schedule": {
+        "mon": "09:00-16:00",
+        "tue": "09:00-16:00",
+        "wed": "09:00-16:00",
+        "thu": "09:00-16:00",
+        "fri": "09:00-16:00",
+        "sat": "closed",
+        "sun": "closed"
+      },
+      "by_appointment": false
+    },
+    "lat": 6.4550575,
+    "lng": 3.3941795,
+    "coverage": [
+      "Nigeria"
+    ]
+  }
+]

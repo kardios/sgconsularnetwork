@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pyyaml
+python-dotenv
+pydantic
+geopy
+aiofiles
+gunicorn

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+ENV/
+
+# Data & Cache
+geocoding_cache.json
+test_location.json
+
+# Scratch Files
+scratch/
+models.txt
+models_utf8.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+.idea/
+.vscode/
