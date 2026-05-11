@@ -302,8 +302,16 @@ let map;
                 userMarker = null;
             }
 
+            let targetLat = userLat !== null ? userLat : m.lat;
+            let targetLng = userLng !== null ? userLng : m.lng;
+
+            // Offset for mobile bottom sheet
+            if (window.innerWidth <= 768) {
+                targetLat -= 1.5; // Offset to keep marker in top half
+            }
+
             if (userLat !== null && userLng !== null) {
-                map.flyTo([userLat, userLng], 6, { duration: 1.5 });
+                map.flyTo([targetLat, targetLng], 6, { duration: 1.5 });
                 const crossIcon = L.divIcon({
                     className: 'custom-cross-icon',
                     html: `<div style="color: #ef4444; font-size: 28px; font-weight: bold; text-align: center; line-height: 28px; text-shadow: 0 0 10px rgba(0,0,0,0.8);">×</div>`,
@@ -312,7 +320,7 @@ let map;
                 });
                 userMarker = L.marker([userLat, userLng], { icon: crossIcon }).addTo(map);
             } else {
-                map.flyTo([m.lat, m.lng], 6, { duration: 1.5 });
+                map.flyTo([targetLat, targetLng], 6, { duration: 1.5 });
             }
             
             showInfoPanel(m);
