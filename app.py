@@ -12,7 +12,7 @@ from contextlib import asynccontextmanager
 
 load_dotenv()
 
-ACCESS_PASSWORD = os.environ.get("ACCESS_PASSWORD", "mfa2026")
+ACCESS_PASSWORD = os.environ.get("ACCESS_PASSWORD", "sgcn2026")
 SESSION_TOKEN = "sg-consular-secure-v1"
 
 from fastapi.responses import JSONResponse, FileResponse

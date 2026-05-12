@@ -474,5 +474,46 @@
             .leaflet-control-zoom {
                 margin-bottom: 20px !important;
             }
-        }   
+        }
+
+        /* Status Indicators */
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .status-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+
+        .status-open {
+            background: rgba(74, 222, 128, 0.1);
+            color: #4ade80;
+        }
+
+        .status-open::before {
+            background: #4ade80;
+            box-shadow: 0 0 8px #4ade80;
+        }
+
+        .status-closed {
+            background: rgba(248, 113, 113, 0.1);
+            color: #f87171;
+        }
+
+        .status-closed::before {
+            background: #f87171;
+        }
+   
  

@@ -15,6 +15,45 @@ let map;
             return countryNameMap[name] || name;
         }
 
+        function getMissionLocalStatus(hours) {
+            if (!hours || !hours.timezone || !hours.schedule) {
+                return { isOpen: false, localTime: 'N/A', localDate: 'N/A', statusText: 'Status Unknown', statusClass: 'status-closed' };
+            }
+
+            const now = new Date();
+            const timeZone = hours.timezone;
+
+            try {
+                // Get local time and date
+                const localTimeStr = now.toLocaleTimeString('en-SG', { timeZone, hour: '2-digit', minute: '2-digit', hour12: false });
+                const localDateStr = now.toLocaleDateString('en-SG', { timeZone, weekday: 'short', day: 'numeric', month: 'short' });
+                const day = new Intl.DateTimeFormat('en-SG', { weekday: 'short', timeZone }).format(now).toLowerCase();
+
+                const daySchedule = hours.schedule[day];
+                let isOpen = false;
+                let statusText = 'Closed';
+                let statusClass = 'status-closed';
+
+                if (daySchedule && daySchedule !== 'closed') {
+                    const ranges = daySchedule.split(',');
+                    isOpen = ranges.some(range => {
+                        const [start, end] = range.split('-');
+                        return localTimeStr >= start && localTimeStr <= end;
+                    });
+                }
+
+                if (isOpen) {
+                    statusText = 'Open Now';
+                    statusClass = 'status-open';
+                }
+
+                return { isOpen, localTime: localTimeStr, localDate: localDateStr, statusText, statusClass };
+            } catch (e) {
+                console.error('Error calculating local status:', e);
+                return { isOpen: false, localTime: 'Error', localDate: 'Error', statusText: 'Status Error', statusClass: 'status-closed' };
+            }
+        }
+
         async function init() {
             // Handle Login
             const loginOverlay = document.getElementById('login-overlay');
@@ -441,13 +480,21 @@ let map;
                 
                 hoursHtml = groups.map(g => {
                     const dayStr = g.startDay === g.endDay ? g.startDay : `${g.startDay}-${g.endDay}`;
-                    return `<div style="display: flex; justify-content: space-between; gap: 8px;"><span style="color: var(--text-dim);">${dayStr}</span> <span>${g.hours}</span></div>`;
+                    return `<div style="display: flex; justify-content: space-between; gap: 8px;"><span style="color: var(--text-dim);">${dayStr}</span> <span>${g.hours.replace(/,/g, ', ')}</span></div>`;
                 }).join('');
             }
 
+            const { localTime, localDate, statusText, statusClass } = getMissionLocalStatus(m.hours);
+
             const hoursRow = m.hours ? `
                 <div class="info-row" style="flex-direction: column; align-items: flex-start; gap: 4px;">
-                    <div class="info-label">Operating Hours <span style="font-size: 0.75rem; color: var(--text-dim);">(${m.hours.timezone || ''})</span></div>
+                    <div class="info-label" style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                        Operating Hours
+                        <span class="status-badge ${statusClass}">${statusText}</span>
+                    </div>
+                    <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-main); margin-bottom: 8px;">
+                        ${localDate}, ${localTime} <span style="font-weight: 300; color: var(--text-dim); font-size: 0.75rem;">(Local Time)</span>
+                    </div>
                     <div class="info-value" style="width: 100%;">${hoursHtml}</div>
                 </div>
             ` : '';
