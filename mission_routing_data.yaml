@@ -1271,14 +1271,14 @@ countries:
     capital_mission: Singapore Embassy in Washington DC
     fallback_when_unresolved: capital_mission
     sub_national:
+      - regions: [Washington DC, District of Columbia, Maryland, Virginia, Texas, Illinois, Georgia, North Carolina, South Carolina, Alabama, Tennessee, Kentucky, Mississippi, Louisiana, Arkansas, Oklahoma, Kansas, Missouri, Iowa, Minnesota, North Dakota, South Dakota, Nebraska, Delaware, West Virginia, Puerto Rico, United States Virgin Islands]
+        mission: Singapore Embassy in Washington DC
       - regions: [Connecticut, Indiana, New Hampshire, New Jersey, New York, Maine, Massachusetts, Michigan, Ohio, Pennsylvania, Rhode Island, Vermont, Wisconsin]
         mission: Singapore Consulate in New York
-      - regions: [Alaska, Arizona, California, Colorado, Hawaii, Idaho, Montana, Nevada, New Mexico, Oregon, Utah, Washington State, Wyoming]
+      - regions: [Alaska, Arizona, California, Colorado, Hawaii, Idaho, Montana, Nevada, New Mexico, Oregon, Utah, Washington, Wyoming, Guam, American Samoa, Northern Mariana Islands, Wake Island, Midway Islands, Johnston Atoll, Baker Island, Howland Island, Jarvis Island, Kingman Reef, Palmyra Atoll]
         mission: Singapore Consulate-General in San Francisco
       - regions: [Florida]
         mission: Singapore Honorary Consulate in Miami
-      - regions: [Washington DC, Maryland, Virginia, Texas, Illinois, Georgia, North Carolina, South Carolina, Alabama, Tennessee, Kentucky, Mississippi, Louisiana, Arkansas, Oklahoma, Kansas, Missouri, Iowa, Minnesota, North Dakota, South Dakota, Nebraska]
-        mission: Singapore Embassy in Washington DC
 
   Vietnam:
     aliases: [Socialist Republic of Vietnam, SRV, Viet Nam]

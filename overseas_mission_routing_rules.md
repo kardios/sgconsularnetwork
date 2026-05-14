@@ -21,3 +21,12 @@
 7.  **ELSE** (Resident Missions)[cite: 1]:
     *   Route to the `primary_mission` or the specific mission for that region (e.g., Vietnam or UAE sub-national routing) and display its **Website**[cite: 1].
 6.  **ALWAYS INCLUDE**: Regardless of the destination, append the **MFA HQ Consular Response Centre** details and the general **MFA Website**[cite: 1].
+
+---
+
+### USA SUB-NATIONAL COVERAGE REFERENCE
+
+*   **Singapore Embassy in Washington DC**: Alabama, Arkansas, Delaware, Georgia, Illinois, Iowa, Kansas, Kentucky, Louisiana, Maryland, Minnesota, Mississippi, Missouri, Nebraska, North Carolina, North Dakota, Oklahoma, South Carolina, South Dakota, Tennessee, Texas, Virginia, West Virginia, Washington DC (District of Columbia), Puerto Rico, US Virgin Islands.
+*   **Singapore Consulate-General in San Francisco**: Alaska, Arizona, California, Colorado, Hawaii, Idaho, Montana, Nevada, New Mexico, Oregon, Utah, Washington, Wyoming, all other US territories & outlying islands (Guam, American Samoa, Northern Mariana Islands, etc.).
+*   **Singapore Consulate in New York**: Connecticut, Indiana, New Hampshire, New Jersey, New York, Maine, Massachusetts, Michigan, Ohio, Pennsylvania, Rhode Island, Vermont, Wisconsin.
+*   **Singapore Honorary Consulate in Miami**: Florida.
