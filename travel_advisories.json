@@ -1,0 +1,410 @@
+[
+    {
+        "country": "Saudi Arabia",
+        "title": "Travel Advisory for Saudi Arabia (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/saudi-arabia/",
+        "lat": 23.8859,
+        "lng": 45.0792
+    },
+    {
+        "country": "United Arab Emirates",
+        "title": "Travel Advisory for United Arab Emirates (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/united-arab-emirates/",
+        "lat": 23.4241,
+        "lng": 53.8478
+    },
+    {
+        "country": "Qatar",
+        "title": "Travel Advisory for Qatar (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/qatar/",
+        "lat": 25.3548,
+        "lng": 51.1839
+    },
+    {
+        "country": "Palestinian Territories",
+        "title": "Travel Notice for Israel and the Palestinian Territories (7 March 2026)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/palestinian-territories/",
+        "lat": 31.9522,
+        "lng": 35.2332
+    },
+    {
+        "country": "Kuwait",
+        "title": "Travel Advisory for Kuwait (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/kuwait/",
+        "lat": 29.3759,
+        "lng": 47.9774
+    },
+    {
+        "country": "Jordan",
+        "title": "Travel Notice for Jordan (7 March 2026)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/jordan/",
+        "lat": 30.5852,
+        "lng": 36.2384
+    },
+    {
+        "country": "Bahrain",
+        "title": "Travel Advisory for Bahrain (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/bahrain/",
+        "lat": 26.0667,
+        "lng": 50.5577
+    },
+    {
+        "country": "Israel",
+        "title": "Travel Notice for Israel and the Palestinian Territories (7 March 2026)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/israel/",
+        "lat": 31.0461,
+        "lng": 34.8516
+    },
+    {
+        "country": "Iraq",
+        "title": "Travel Advisory on Iraq (14 May 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/iraq/",
+        "lat": 33.2232,
+        "lng": 43.6793
+    },
+    {
+        "country": "Syria",
+        "title": "Travel Advisory for Syria (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/syria/",
+        "lat": 34.8021,
+        "lng": 38.9968
+    },
+    {
+        "country": "Lebanon",
+        "title": "Travel Advisory for Lebanon (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/lebanon/",
+        "lat": 33.8547,
+        "lng": 35.8623
+    },
+    {
+        "country": "Iran",
+        "title": "Travel Advisory for Iran (7 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/iran/",
+        "lat": 32.4279,
+        "lng": 53.688
+    },
+    {
+        "country": "Yemen",
+        "title": "Travel Advisory for Yemen (1 March 2026)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/yemen/",
+        "lat": 15.5527,
+        "lng": 48.5164
+    },
+    {
+        "country": "India",
+        "title": "Travel Notice for West Bengal, India (30 January 2026)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/india/",
+        "lat": 22.9868,
+        "lng": 87.855
+    },
+    {
+        "country": "India",
+        "title": "Travel Advisory for India (13 November 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/india/",
+        "lat": 20.5937,
+        "lng": 78.9629
+    },
+    {
+        "country": "India",
+        "title": "Travel Advisory for the Union Territory of Jammu and Kashmir, India (07 May 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/india/",
+        "lat": 33.7782,
+        "lng": 76.5762
+    },
+    {
+        "country": "Madagascar",
+        "title": "Travel Advisory: Situation in Madagascar (14 October 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/madagascar/",
+        "lat": -18.7669,
+        "lng": 46.8691
+    },
+    {
+        "country": "Myanmar",
+        "title": "Travel Advisory for Myanmar (28 July 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/myanmar/",
+        "lat": 19.1633,
+        "lng": 96.5
+    },
+    {
+        "country": "Libya",
+        "title": "Travel Advisory for Libya (30 May 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/libya/",
+        "lat": 26.3351,
+        "lng": 17.2283
+    },
+    {
+        "country": "Haiti",
+        "title": "Travel Advisory: Situation in Haiti (16 May 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/haiti/",
+        "lat": 18.9712,
+        "lng": -72.2852
+    },
+    {
+        "country": "Pakistan",
+        "title": "Travel Advisory for Pakistan (07 May 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/pakistan/",
+        "lat": 30.3753,
+        "lng": 69.3451
+    },
+    {
+        "country": "Bangladesh",
+        "title": "Travel Advisory: Situation in Bangladesh (30 April 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/bangladesh/",
+        "lat": 23.685,
+        "lng": 90.3563
+    },
+    {
+        "country": "Nigeria",
+        "title": "MFA Travel Advisory: Situation in Nigeria (30 April 2025)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/nigeria/",
+        "lat": 9.082,
+        "lng": 8.6753
+    },
+    {
+        "country": "Vanuatu",
+        "title": "Travel Advisory for Vanuatu (22 December 2024)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/vanuatu/",
+        "lat": -15.3767,
+        "lng": 166.9592
+    },
+    {
+        "country": "Afghanistan",
+        "title": "Travel Advisory on Afghanistan (17 September 2024)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/afghanistan/",
+        "lat": 33.9391,
+        "lng": 67.71
+    },
+    {
+        "country": "Russia",
+        "title": "MFA Travel Advisory: Situation in Ukraine and Russia (16 April 2024)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/russia/",
+        "lat": 61.524,
+        "lng": 105.3188
+    },
+    {
+        "country": "Azerbaijan",
+        "title": "Travel Advisory: Situation in the Nagorno-Karabakh Region (18 September 2022)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/azerbaijan/",
+        "lat": 39.9501,
+        "lng": 46.7501
+    },
+    {
+        "country": "Ukraine",
+        "title": "Travel Advisory for Ukraine (13 February 2022)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/ukraine/",
+        "lat": 48.3794,
+        "lng": 31.1656
+    },
+    {
+        "country": "Ukraine",
+        "title": "Travel Advisory for Ukraine (26 January 2022)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/ukraine/",
+        "lat": 48.3794,
+        "lng": 31.1656
+    },
+    {
+        "country": "North Korea",
+        "title": "Travel Advisory for the Democratic People's Republic of Korea (North Korea) (02 September 2019)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/north-korea/",
+        "lat": 40.3399,
+        "lng": 127.5101
+    },
+    {
+        "country": "Nepal",
+        "title": "Travel Notice: Situation in Nepal (19 March 2026)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/nepal/",
+        "lat": 28.3949,
+        "lng": 84.124
+    },
+    {
+        "country": "Bolivia",
+        "title": "Travel Notice: Strikes in La Paz, Bolivia (14 January 2026)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/bolivia/",
+        "lat": -16.5,
+        "lng": -68.1193
+    },
+    {
+        "country": "Tanzania",
+        "title": "Travel Notice for Tanzania (2 January 2026)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/tanzania/",
+        "lat": -6.369,
+        "lng": 34.8888
+    },
+    {
+        "country": "Thailand",
+        "title": "Travel Notice: Thai-Cambodian Border Situation (9 December 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/thailand/",
+        "lat": 15.87,
+        "lng": 100.9925
+    },
+    {
+        "country": "Thailand",
+        "title": "Travel Notice: Flood Situation in Hat Yai, Thailand (2 December 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/thailand/",
+        "lat": 7.0086,
+        "lng": 100.4747
+    },
+    {
+        "country": "Cambodia",
+        "title": "Travel Notice: Thai-Cambodian Border Situation (9 December 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/cambodia/",
+        "lat": 12.5657,
+        "lng": 104.991
+    },
+    {
+        "country": "Indonesia",
+        "title": "Travel Notice: Mount Semeru's Eruption (20 November 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/indonesia/",
+        "lat": -8.1078,
+        "lng": 112.9225
+    },
+    {
+        "country": "Indonesia",
+        "title": "Travel Notice: Eruption of Mount Lewotobi Laki-Laki (18 June 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/indonesia/",
+        "lat": -8.5279,
+        "lng": 122.7752
+    },
+    {
+        "country": "Indonesia",
+        "title": "Travel Notice: Mount Ruang's Eruption (21 March 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/indonesia/",
+        "lat": 2.3,
+        "lng": 125.3665
+    },
+    {
+        "country": "Indonesia",
+        "title": "Travel Advisory for Mount Sinabung in Sumatra (12 April 2018)",
+        "type": "advisory",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/indonesia/",
+        "lat": 3.1703,
+        "lng": 98.3919
+    },
+    {
+        "country": "Peru",
+        "title": "Travel Notice for Peru (24 October 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/peru/",
+        "lat": -9.19,
+        "lng": -75.0152
+    },
+    {
+        "country": "Philippines",
+        "title": "Travel Notice for Mindanao, Philippines (28 July 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/philippines/",
+        "lat": 7.8731,
+        "lng": 125.013
+    },
+    {
+        "country": "France",
+        "title": "Travel Notice: New Caledonia (05 June 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/france/",
+        "lat": -20.9043,
+        "lng": 165.618
+    },
+    {
+        "country": "France",
+        "title": "Travel Notice for France (24 June 2023)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/france/",
+        "lat": 46.2276,
+        "lng": 2.2137
+    },
+    {
+        "country": "Kyrgyz Republic",
+        "title": "Travel Notice for Kyrgyz Republic (14 May 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/kyrgyz-republic/",
+        "lat": 41.2044,
+        "lng": 74.7661
+    },
+    {
+        "country": "Tajikistan",
+        "title": "Travel Notice for Tajikistan (14 May 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/tajikistan/",
+        "lat": 38.861,
+        "lng": 71.2761
+    },
+    {
+        "country": "Tunisia",
+        "title": "Travel Notice for Tunisia (14 May 2025)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/tunisia/",
+        "lat": 33.8869,
+        "lng": 9.5375
+    },
+    {
+        "country": "Moldova",
+        "title": "Travel Notice: Situation in the Transnistria Region (09 May 2024)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/moldova/",
+        "lat": 47.2158,
+        "lng": 29.4686
+    },
+    {
+        "country": "Belgium",
+        "title": "Travel Notice for Belgium (20 October 2023)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/belgium/",
+        "lat": 50.5039,
+        "lng": 4.4699
+    },
+    {
+        "country": "Sweden",
+        "title": "Travel Notice for Sweden (19 August 2023)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/sweden/",
+        "lat": 60.1282,
+        "lng": 18.6435
+    },
+    {
+        "country": "Malaysia",
+        "title": "Travel Notice Situation in Eastern Sabah (26 June 2023)",
+        "type": "notice",
+        "link": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/malaysia/",
+        "lat": 5.5577,
+        "lng": 118.0173
+    }
+]

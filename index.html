@@ -6,7 +6,7 @@
     <title>Singapore Global Consular Network</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -29,12 +29,22 @@
 
     <div class="sidebar">
         <div class="sidebar-header">
-            <h1>SG Consular Network</h1>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h1>SG Consular Network</h1>
+                <div style="display: flex; align-items: center; gap: 8px;" title="Toggle Travel Advisories">
+                    <span style="font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Advice</span>
+                    <label class="switch">
+                        <input type="checkbox" id="advisory-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
             <div class="search-container">
                 <input type="text" class="search-input" id="search" placeholder="Search location or mission...">
                 <div class="search-spinner" id="search-spinner"></div>
             </div>
             <div class="search-status" id="search-status"></div>
+            <div id="search-advisory-alert" style="display: none; margin-top: 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500; transition: all 0.2s; overflow: hidden;"></div>
         </div>
         <div class="mission-list" id="list">
             <!-- List items will be injected here -->
@@ -42,13 +52,74 @@
     </div>
 
     <div class="info-panel" id="info-panel">
-        <button class="close-btn" onclick="closeInfoPanel()"><span>✕</span></button>
+        <button class="close-btn" id="close-info-btn"><span>✕</span></button>
         <div id="info-content"></div>
     </div>
+
+    <template id="tpl-info-panel">
+        <div class="popup-content" style="padding: 0;">
+            <h3 class="tpl-name" style="font-size: 1.25rem; margin-top: 8px; margin-bottom: 16px;"></h3>
+            
+            <div class="info-row tpl-address-row">
+                <div class="info-label">Address</div>
+                <div class="info-value tpl-address"></div>
+            </div>
+            
+            <div class="info-row tpl-phone-row">
+                <div class="info-label">Phone</div>
+                <div class="info-value"><a class="tpl-phone" style="color: var(--accent-blue); text-decoration: none;"></a></div>
+            </div>
+            
+            <div class="info-row tpl-email-row">
+                <div class="info-label">Email</div>
+                <div class="info-value"><a class="tpl-email" style="color: var(--accent-blue); text-decoration: none;"></a></div>
+            </div>
+            
+            <div class="info-row tpl-emergency-row">
+                <div class="info-label">Emergency</div>
+                <div class="info-value"><span class="tpl-emergency" style="color: #ef4444; font-weight: 600;"></span></div>
+            </div>
+            
+            <div class="info-row tpl-appointment-row">
+                <div class="info-label">Appointment</div>
+                <div class="info-value tpl-appointment"></div>
+            </div>
+            
+            <div class="info-row tpl-hours-row" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+                <div class="info-label" style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+                    Operating Hours
+                    <span class="status-badge tpl-status"></span>
+                </div>
+                <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-main); margin-bottom: 8px;">
+                    <span class="tpl-local-datetime"></span> <span style="font-weight: 300; color: var(--text-dim); font-size: 0.75rem;">(Local Time)</span>
+                </div>
+                <div class="info-value tpl-hours-list" style="width: 100%;"></div>
+            </div>
+            
+            <div class="info-row tpl-covers-row">
+                <div class="info-label">Covers</div>
+                <div class="info-value tpl-covers"></div>
+            </div>
+            
+            <div class="popup-actions" style="display: flex; gap: 8px; margin-top: 16px;">
+                <a class="btn btn-primary tpl-website" target="_blank" style="flex: 1;">Official Site</a>
+                <button class="btn btn-primary tpl-coverage-btn" style="flex: 1; border: 1px solid var(--border-glass); background: rgba(56, 189, 248, 0.1); color: var(--accent-blue);">Show Coverage</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="tpl-advisory-banner">
+        <a class="tpl-banner-link" target="_blank" style="display: flex; align-items: center; gap: 8px; padding: 12px; text-decoration: none;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="flex-shrink: 0;"><path d="M5 21V4h9l1 2h5v10h-7l-1-2H7v7H5z"/></svg>
+            <span class="tpl-banner-text" style="flex: 1;"></span>
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" style="flex-shrink: 0;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <div class="tpl-advisory-list" style="padding: 8px 12px; display: flex; flex-direction: column; gap: 4px; max-height: 180px; overflow-y: auto;"></div>
+    </template>
 
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

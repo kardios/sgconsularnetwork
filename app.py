@@ -1,6 +1,7 @@
 import os
 import yaml
 import json
+import asyncio
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -57,12 +58,14 @@ async def lifespan(app: FastAPI):
         app.state.data = data
         app.state.missions_data = missions_data
         app.state.country_mapping = country_mapping
+        app.state.query_cache = {}
     except Exception as e:
         print(f"Error during startup: {e}")
         # Initialize with empty data to avoid crashing the whole server
         app.state.data = {}
         app.state.missions_data = {}
         app.state.country_mapping = {}
+        app.state.query_cache = {}
         
     yield
     # Cleanup if necessary
@@ -217,11 +220,29 @@ async def route_location(req: Request, payload: LocationRequest):
     data = req.app.state.data
     missions_data = req.app.state.missions_data
     country_mapping = req.app.state.country_mapping
+    query_cache = req.app.state.query_cache
     missions_list = list(missions_data.keys())
     
     # 1. Deterministic Geocoding & Rules Engine
     try:
-        location = geolocator.geocode(payload.location, addressdetails=True, language='en', timeout=5)
+        query_key = payload.location.lower().strip()
+        location = query_cache.get(query_key)
+        
+        if not location:
+            location = await asyncio.to_thread(
+                geolocator.geocode,
+                payload.location,
+                addressdetails=True,
+                language='en',
+                timeout=5
+            )
+            
+            if location:
+                query_cache[query_key] = location
+                if len(query_cache) > 1000:
+                    first_key = next(iter(query_cache))
+                    del query_cache[first_key]
+
         if location and location.raw.get('address'):
             address = location.raw['address']
             country = address.get('country')
@@ -237,7 +258,8 @@ async def route_location(req: Request, payload: LocationRequest):
                         "mission": mission_name, 
                         "routing_type": routing_type,
                         "lat": location.latitude,
-                        "lng": location.longitude
+                        "lng": location.longitude,
+                        "queried_country": country
                     }
         
         # If geocoding finds something but no rules match, return MFA HQ as fallback
@@ -247,7 +269,8 @@ async def route_location(req: Request, payload: LocationRequest):
                 "mission": "MFA HQ", 
                 "routing_type": "fallback",
                 "lat": location.latitude,
-                "lng": location.longitude
+                "lng": location.longitude,
+                "queried_country": address.get('country') if address else None
             }
         return {"mission": "MFA HQ", "routing_type": "fallback"}
 

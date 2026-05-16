@@ -12,6 +12,7 @@ test_location.json
 
 # Scratch Files
 scratch/
+artifacts/
 models.txt
 models_utf8.txt
 
