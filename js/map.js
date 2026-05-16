@@ -80,13 +80,13 @@ export function renderMissionMarkers(data) {
             let shapeClass = 'shape-circle'; 
 
             if (['Embassy', 'High Commission'].includes(m.type) || (m.type === 'Trade Office' && m.city === 'Taipei')) {
-                color = '#D94B4B'; 
+                color = '#15803d'; 
                 shapeClass = 'shape-square';
             } else if (['Consulate-General', 'Consulate', 'Permanent Mission'].includes(m.type)) {
                 color = '#3B82F6'; 
                 shapeClass = 'shape-circle';
             } else if (['Honorary Consulate', 'Honorary Consulate-General'].includes(m.type)) {
-                color = '#8B5CF6'; 
+                color = '#d946ef'; 
                 shapeClass = 'shape-diamond';
             }
 
@@ -185,7 +185,7 @@ export function selectMission(m, item = null, userLat = null, userLng = null) {
         state.map.flyTo([targetLat, targetLng], 6, { duration: 1.5 });
         const pinIcon = L.divIcon({
             className: 'custom-pin-icon',
-            html: `<svg class="pin-marker" viewBox="0 0 24 24" width="32" height="32" fill="#22c55e" stroke="#fff" stroke-width="1.5">
+            html: `<svg class="pin-marker" viewBox="0 0 24 24" width="32" height="32" fill="#6b7280" stroke="#fff" stroke-width="1.5">
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                         <circle cx="12" cy="10" r="3" fill="#fff"></circle>
                     </svg>`,
@@ -205,7 +205,7 @@ export function dropFallbackMarker(userLat, userLng) {
     if (state.userMarker) state.map.removeLayer(state.userMarker);
     const pinIcon = L.divIcon({
         className: 'custom-pin-icon',
-        html: `<svg class="pin-marker" viewBox="0 0 24 24" width="32" height="32" fill="#22c55e" stroke="#fff" stroke-width="1.5">
+        html: `<svg class="pin-marker" viewBox="0 0 24 24" width="32" height="32" fill="#6b7280" stroke="#fff" stroke-width="1.5">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3" fill="#fff"></circle>
                 </svg>`,
