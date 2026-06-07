@@ -10,9 +10,19 @@ export function getMissionLocalStatus(hours) {
     const timeZone = hours.timezone;
 
     try {
-        const localTimeStr = now.toLocaleTimeString('en-SG', { timeZone, hour: '2-digit', minute: '2-digit', hour12: false });
-        const localDateStr = now.toLocaleDateString('en-SG', { timeZone, weekday: 'short', day: 'numeric', month: 'short' });
-        const day = new Intl.DateTimeFormat('en-SG', { weekday: 'short', timeZone }).format(now).toLowerCase();
+        const formatter = new Intl.DateTimeFormat('en-US', {
+            timeZone,
+            hour: '2-digit',
+            minute: '2-digit',
+            hourCycle: 'h23'
+        });
+        const parts = formatter.formatToParts(now);
+        const hour = parts.find(p => p.type === 'hour').value;
+        const minute = parts.find(p => p.type === 'minute').value;
+        const localTimeStr = `${hour}:${minute}`;
+
+        const localDateStr = now.toLocaleDateString('en-US', { timeZone, weekday: 'short', day: 'numeric', month: 'short' });
+        const day = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone }).format(now).toLowerCase();
 
         const daySchedule = hours.schedule[day];
         let isOpen = false;
@@ -39,7 +49,7 @@ export function getMissionLocalStatus(hours) {
     }
 }
 
-export function showInfoPanel(m) {
+export function showInfoPanel(m, secondaryMissionName = null, secondaryLabel = null) {
     const isCapitalMission = m.type === 'Embassy' || m.type === 'High Commission' || (m.type === 'Trade Office' && m.city === 'Taipei');
     
     const template = document.getElementById('tpl-info-panel');
@@ -122,16 +132,8 @@ export function showInfoPanel(m) {
     if (isCapitalMission) {
         const coverageAttr = m.coverage ? m.coverage : [m.country];
         clone.querySelector('.tpl-covers').textContent = coverageAttr.join(', ');
-        
-        const coverageBtn = clone.querySelector('.tpl-coverage-btn');
-        coverageBtn.addEventListener('click', () => {
-            import('./map.js').then(module => {
-                module.highlightCoverage(coverageAttr);
-            });
-        });
     } else {
         clone.querySelector('.tpl-covers-row').style.display = 'none';
-        clone.querySelector('.tpl-coverage-btn').style.display = 'none';
     }
     
     if (m.website) {
@@ -141,6 +143,26 @@ export function showInfoPanel(m) {
     }
     
     contentDiv.appendChild(clone);
+
+    if (secondaryMissionName) {
+        const secondaryMission = state.missions.find(x => x.name === secondaryMissionName);
+        if (secondaryMission) {
+            const secCard = document.createElement('div');
+            secCard.className = 'secondary-mission-card';
+            secCard.innerHTML = `
+                <div class="secondary-header">${secondaryLabel}</div>
+                <h4 class="secondary-name">${secondaryMission.name}</h4>
+                <div class="secondary-details">
+                    ${secondaryMission.address ? `<div class="sec-row"><span class="sec-label">Address</span><span class="sec-value">${secondaryMission.address}</span></div>` : ''}
+                    ${secondaryMission.phone ? `<div class="sec-row"><span class="sec-label">Phone</span><span class="sec-value"><a href="tel:${secondaryMission.phone}">${secondaryMission.phone}</a></span></div>` : ''}
+                    ${secondaryMission.emergency ? `<div class="sec-row"><span class="sec-label">Emergency</span><span class="sec-value emergency-highlight">${secondaryMission.emergency}</span></div>` : ''}
+                    ${secondaryMission.website ? `<div class="sec-row" style="margin-top: 12px;"><a class="btn btn-secondary" href="${secondaryMission.website}" target="_blank" style="display: block; width: 100%;">Official Site</a></div>` : ''}
+                </div>
+            `;
+            contentDiv.appendChild(secCard);
+        }
+    }
+    
     document.getElementById('info-panel').classList.add('visible');
 }
 
@@ -179,75 +201,4 @@ export function renderMissionsList(data) {
     });
 }
 
-export function checkAndDisplayAdvisory(countries) {
-    const alertBox = document.getElementById('search-advisory-alert');
-    if (!alertBox) return;
 
-    if (!countries || countries.length === 0) {
-        alertBox.style.display = 'none';
-        return;
-    }
-    
-    let matchedAds = [];
-    for (const c of countries) {
-        const normalizedC = normalizeCountryName(c);
-        const ads = state.globalAdvisories.filter(a => a.country.toLowerCase() === normalizedC.toLowerCase());
-        matchedAds = matchedAds.concat(ads);
-    }
-    
-    if (matchedAds.length > 0) {
-        alertBox.style.display = 'flex';
-        alertBox.style.flexDirection = 'column';
-        alertBox.innerHTML = ''; // clear old
-        
-        const hasAdvisory = matchedAds.some(a => a.type === 'advisory');
-        const bgColor = hasAdvisory ? 'rgba(248, 113, 113, 0.15)' : 'rgba(250, 204, 21, 0.15)';
-        const borderColor = hasAdvisory ? 'rgba(248, 113, 113, 0.4)' : 'rgba(250, 204, 21, 0.4)';
-        const textColor = hasAdvisory ? '#f87171' : '#facc15';
-        const text = hasAdvisory ? 'Travel Advisory' : 'Travel Notice';
-        const countryStr = [...new Set(matchedAds.map(a => a.country))].join(', ');
-        
-        alertBox.style.background = bgColor;
-        alertBox.style.border = `1px solid ${borderColor}`;
-        
-        const template = document.getElementById('tpl-advisory-banner');
-        const clone = template.content.cloneNode(true);
-        
-        const bannerLink = clone.querySelector('.tpl-banner-link');
-        bannerLink.href = matchedAds[0].link;
-        bannerLink.style.color = textColor;
-        clone.querySelector('.tpl-banner-text').textContent = `${text} for ${countryStr}`;
-        
-        const listDiv = clone.querySelector('.tpl-advisory-list');
-        listDiv.style.borderTop = `1px solid ${borderColor}`;
-        
-        matchedAds.forEach((adv, idx) => {
-            const itemColor = adv.type === 'advisory' ? '#f87171' : '#facc15';
-            
-            const div = document.createElement('div');
-            div.className = 'advisory-item';
-            div.dataset.idx = idx;
-            div.style.cssText = 'cursor: pointer; display: flex; align-items: flex-start; gap: 8px; padding: 6px; border-radius: 8px; transition: background 0.2s;';
-            div.innerHTML = `
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="${itemColor}" style="margin-top: 2px; flex-shrink: 0;"><path d="M5 21V4h9l1 2h5v10h-7l-1-2H7v7H5z"/></svg>
-                <span style="font-size: 0.8rem; color: var(--text-main); line-height: 1.3;">${adv.title}</span>
-            `;
-            
-            div.addEventListener('mouseenter', () => div.style.background = 'rgba(255, 255, 255, 0.05)');
-            div.addEventListener('mouseleave', () => div.style.background = 'transparent');
-            div.addEventListener('click', () => {
-                if (adv && adv.marker) {
-                    state.map.flyTo([adv.lat, adv.lng], 6, { duration: 1.0 });
-                    setTimeout(() => {
-                        adv.marker.openTooltip();
-                    }, 500);
-                }
-            });
-            listDiv.appendChild(div);
-        });
-        
-        alertBox.appendChild(clone);
-    } else {
-        alertBox.style.display = 'none';
-    }
-}

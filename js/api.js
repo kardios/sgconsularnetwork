@@ -28,11 +28,7 @@ export async function loadInitialData() {
     return { missions, mappingData, countriesGeoJSON };
 }
 
-export async function loadAdvisories() {
-    const response = await fetch('travel_advisories.json');
-    if (!response.ok) throw new Error('Failed to load advisories');
-    return await response.json();
-}
+
 
 export async function routeLocation(location, signal) {
     const response = await fetch('/route', {

@@ -1,7 +1,7 @@
 import { state } from './state.js';
 import { routeLocation } from './api.js';
 import { selectMission, dropFallbackMarker } from './map.js';
-import { renderMissionsList, checkAndDisplayAdvisory } from './ui.js';
+import { renderMissionsList } from './ui.js';
 
 let debounceTimer = null;
 let currentAbortController = null;
@@ -17,9 +17,8 @@ export function setupSearch() {
             clearTimeout(debounceTimer);
         }
 
-        if (termLower.length === 0) {
+        if (termLower.length < 3) {
             renderMissionsList([]);
-            checkAndDisplayAdvisory([]);
 
             document.getElementById('search-status').textContent = '';
             document.getElementById('search-spinner').classList.remove('active');
@@ -30,28 +29,23 @@ export function setupSearch() {
             return;
         }
 
-        let filtered = [];
-        if (termLower.length >= 3) {
-            filtered = state.missions.filter(m =>
-                m.name.toLowerCase().includes(termLower) ||
-                m.city.toLowerCase().includes(termLower) ||
-                m.country.toLowerCase().includes(termLower)
-            );
+        const filtered = state.missions.filter(m =>
+            m.name.toLowerCase().includes(termLower) ||
+            m.city.toLowerCase().includes(termLower) ||
+            m.country.toLowerCase().includes(termLower)
+        );
 
-            filtered.sort((a, b) => {
-                const aName = a.name.toLowerCase().startsWith(termLower) || a.city.toLowerCase().startsWith(termLower);
-                const bName = b.name.toLowerCase().startsWith(termLower) || b.city.toLowerCase().startsWith(termLower);
-                if (aName && !bName) return -1;
-                if (!aName && bName) return 1;
-                return 0;
-            });
+        filtered.sort((a, b) => {
+            const aName = a.name.toLowerCase().startsWith(termLower) || a.city.toLowerCase().startsWith(termLower);
+            const bName = b.name.toLowerCase().startsWith(termLower) || b.city.toLowerCase().startsWith(termLower);
+            if (aName && !bName) return -1;
+            if (!aName && bName) return 1;
+            return 0;
+        });
 
-            renderMissionsList(filtered);
-            const matchedCountries = [...new Set(filtered.map(m => m.country))];
-            checkAndDisplayAdvisory(matchedCountries);
-        }
+        renderMissionsList(filtered);
 
-        if (term.length >= 3 && filtered.length === 0) {
+        if (filtered.length === 0) {
             debounceTimer = setTimeout(() => {
                 smartSearch(term, false);
             }, 800);
@@ -96,17 +90,11 @@ export async function smartSearch(location, isFinal = false) {
 
         const mission = state.missions.find(m => m.name === missionName);
         
-        if (queriedCountry) {
-            checkAndDisplayAdvisory([queriedCountry]);
-        } else if (mission) {
-            checkAndDisplayAdvisory([mission.country]);
-        } else {
-            checkAndDisplayAdvisory([]);
-        }
+
 
         if (mission) {
             if (isFinal) {
-                selectMission(mission, null, userLat, userLng);
+                selectMission(mission, null, userLat, userLng, data.secondary_mission, data.secondary_label);
             } else {
                 renderMissionsList([mission]);
             }

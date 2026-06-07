@@ -78,8 +78,12 @@ async def auth_middleware(request: Request, call_next):
     # Public paths
     public_paths = ["/", "/login", "/style.css", "/app.js", "/favicon.ico", "/health"]
     
-    if request.url.path in public_paths:
-        return await call_next(request)
+    if request.url.path in public_paths or request.url.path.startswith("/js/"):
+        response = await call_next(request)
+        response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
+        return response
     
     # Check for session cookie
     auth_cookie = request.cookies.get("session_token")
@@ -90,7 +94,11 @@ async def auth_middleware(request: Request, call_next):
         # Otherwise redirect to home (where the login overlay will show)
         return JSONResponse(status_code=401, content={"detail": "Unauthorized"})
 
-    return await call_next(request)
+    response = await call_next(request)
+    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
+    return response
 
 @app.post("/login")
 async def login(payload: dict):
@@ -119,8 +127,14 @@ def normalize_country(country, mapping):
     # Return the mapped name if it exists, otherwise return the original country name
     return mapping.get(country, country)
 
+def clean_string(s):
+    if not s:
+        return ""
+    return "".join(c.lower() for c in s if c.isalnum())
+
 def route_by_rules(country, user_lat, user_lng, data, missions_data, address=None):
     countries_data = data.get('countries', {})
+    country_missions = [m for m in missions_data.values() if isinstance(m, dict) and m.get('country') == country]
     
     if country in countries_data:
         rule = countries_data[country]
@@ -135,22 +149,55 @@ def route_by_rules(country, user_lat, user_lng, data, missions_data, address=Non
             # 1. Check for explicit sub_national block (e.g., China, India, USA)
             sub_national = rule.get('sub_national')
             if sub_national:
+                clean_state = clean_string(state)
+                clean_city = clean_string(city)
                 for entry in sub_national:
                     regions = entry.get('regions', [])
-                    if (state and state in regions) or (city and city in regions):
+                    clean_regions = [clean_string(r) for r in regions]
+                    if (clean_state and clean_state in clean_regions) or (clean_city and clean_city in clean_regions):
                         return {"mission": entry.get('mission'), "type": "resident"}
 
             # 2. Check for legacy provinces block if present
-            if state and rule.get('provinces') and state in rule['provinces']:
-                return {"mission": rule['provinces'][state], "type": "subnational"}
+            if state and rule.get('provinces'):
+                clean_state = clean_string(state)
+                clean_provinces = {clean_string(k): v for k, v in rule['provinces'].items()}
+                if clean_state in clean_provinces:
+                    return {"mission": clean_provinces[clean_state], "type": "subnational"}
 
         if ctype == 'cross_accredited':
             return {"mission": rule.get('accrediting_mission'), "type": ctype}
             
-        elif ctype in ['cross_accredited_with_honorary', 'none']:
+        elif ctype == 'cross_accredited_with_honorary':
             hon_offices = rule.get('honorary_offices', [])
             if hon_offices:
-                return {"mission": hon_offices[0].get('mission'), "type": ctype}
+                return {
+                    "mission": hon_offices[0].get('mission'),
+                    "type": ctype,
+                    "secondary_mission": rule.get('accrediting_mission'),
+                    "secondary_label": "SUPERVISING RESIDENT MISSION"
+                }
+                
+        elif ctype == 'none':
+            hon_offices = rule.get('honorary_offices', [])
+            if hon_offices:
+                # Find the nearest resident mission among all resident missions in missions_data
+                nearest_res_mission = None
+                min_dist = float('inf')
+                for m_name, m_info in missions_data.items():
+                    if m_info.get('type') in ['Honorary Consulate', 'Honorary Consulate-General']:
+                        continue
+                    if m_info.get('lat') and m_info.get('lng'):
+                        dist = geodesic((user_lat, user_lng), (m_info['lat'], m_info['lng'])).km
+                        if dist < min_dist:
+                            min_dist = dist
+                            nearest_res_mission = m_name
+                
+                return {
+                    "mission": hon_offices[0].get('mission'),
+                    "type": ctype,
+                    "secondary_mission": nearest_res_mission,
+                    "secondary_label": "NEAREST RESIDENT OFFICE"
+                }
                 
         elif ctype == 'nearest_honorary':
             hon_offices = rule.get('honorary_offices', [])
@@ -189,9 +236,18 @@ def route_by_rules(country, user_lat, user_lng, data, missions_data, address=Non
             if closest_mission:
                 return {"mission": closest_mission, "type": ctype}
 
+        # Fallback if sub-national routing didn't resolve to a mission
+        fallback = rule.get('fallback_when_unresolved')
+        if fallback == 'capital_mission' and rule.get('capital_mission'):
+            return {"mission": rule.get('capital_mission'), "type": "resident"}
+        elif fallback == 'list_all':
+            capital_city = rule.get('capital')
+            if capital_city:
+                for m_info in country_missions:
+                    if m_info.get('city') == capital_city:
+                        return {"mission": m_info['name'], "type": "resident"}
+
     # Sub-national routing (resident countries) - Fallback to nearest
-    country_missions = [m for m in missions_data.values() if isinstance(m, dict) and m.get('country') == country]
-    
     if len(country_missions) >= 1:
         closest_mission = None
         min_dist = float('inf')
@@ -254,13 +310,18 @@ async def route_location(req: Request, payload: LocationRequest):
                     mission_name = route_result['mission']
                     routing_type = route_result['type']
                     print(f"Routing '{payload.location}' to: {mission_name} ({routing_type})")
-                    return {
+                    res = {
                         "mission": mission_name, 
                         "routing_type": routing_type,
                         "lat": location.latitude,
                         "lng": location.longitude,
                         "queried_country": country
                     }
+                    if 'secondary_mission' in route_result:
+                        res['secondary_mission'] = route_result['secondary_mission']
+                    if 'secondary_label' in route_result:
+                        res['secondary_label'] = route_result['secondary_label']
+                    return res
         
         # If geocoding finds something but no rules match, return MFA HQ as fallback
         # If location was found, we can still return coordinates to center the map

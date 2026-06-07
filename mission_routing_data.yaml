@@ -1541,13 +1541,6 @@ countries:
     coverage_type: cross_accredited
     accrediting_mission: Singapore Embassy in Riyadh
 
-
-  Iceland:
-    aliases: [Republic of Iceland]
-    capital: Reykjavík
-    coverage_type: cross_accredited
-    accrediting_mission: Singapore High Commission in London
-
   Mongolia:
     aliases: []
     capital: Ulaanbaatar

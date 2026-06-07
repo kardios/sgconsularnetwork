@@ -31,20 +31,12 @@
         <div class="sidebar-header">
             <div style="display: flex; justify-content: space-between; align-items: center;">
                 <h1>SG Consular Network</h1>
-                <div style="display: flex; align-items: center; gap: 8px;" title="Toggle Travel Advisories">
-                    <span style="font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600;">Advice</span>
-                    <label class="switch">
-                        <input type="checkbox" id="advisory-toggle" checked>
-                        <span class="slider round"></span>
-                    </label>
-                </div>
             </div>
             <div class="search-container">
                 <input type="text" class="search-input" id="search" placeholder="Search location or mission...">
                 <div class="search-spinner" id="search-spinner"></div>
             </div>
             <div class="search-status" id="search-status"></div>
-            <div id="search-advisory-alert" style="display: none; margin-top: 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500; transition: all 0.2s; overflow: hidden;"></div>
         </div>
         <div class="mission-list" id="list">
             <!-- List items will be injected here -->
@@ -54,6 +46,26 @@
     <div class="info-panel" id="info-panel">
         <button class="close-btn" id="close-info-btn"><span>✕</span></button>
         <div id="info-content"></div>
+        <div class="mfa-hq-card">
+            <h3 class="mfa-hq-title">🇸🇬 MFA HQ Consular Response Centre</h3>
+            <p class="mfa-hq-subtitle">24-Hour Emergency Hotlines</p>
+            <div class="info-row">
+                <div class="info-label">Emergency</div>
+                <div class="info-value"><a href="tel:+6563798800" class="tel-link emergency-highlight">+65 6379 8800</a></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">General Line</div>
+                <div class="info-value"><a href="tel:+6563798000" class="tel-link">+65 6379 8000</a></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Email</div>
+                <div class="info-value"><a href="mailto:mfa@mfa.gov.sg" class="email-link">mfa@mfa.gov.sg</a></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Website</div>
+                <div class="info-value"><a href="https://www.mfa.gov.sg" target="_blank" class="web-link">www.mfa.gov.sg</a></div>
+            </div>
+        </div>
     </div>
 
     <template id="tpl-info-panel">
@@ -103,18 +115,8 @@
             
             <div class="popup-actions" style="display: flex; gap: 8px; margin-top: 16px;">
                 <a class="btn btn-primary tpl-website" target="_blank" style="flex: 1;">Official Site</a>
-                <button class="btn btn-primary tpl-coverage-btn" style="flex: 1; border: 1px solid var(--border-glass); background: rgba(56, 189, 248, 0.1); color: var(--accent-blue);">Show Coverage</button>
             </div>
         </div>
-    </template>
-
-    <template id="tpl-advisory-banner">
-        <a class="tpl-banner-link" target="_blank" style="display: flex; align-items: center; gap: 8px; padding: 12px; text-decoration: none;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="flex-shrink: 0;"><path d="M5 21V4h9l1 2h5v10h-7l-1-2H7v7H5z"/></svg>
-            <span class="tpl-banner-text" style="flex: 1;"></span>
-            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" style="flex-shrink: 0;"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </a>
-        <div class="tpl-advisory-list" style="padding: 8px 12px; display: flex; flex-direction: column; gap: 4px; max-height: 180px; overflow-y: auto;"></div>
     </template>
 
     <div id="map"></div>

@@ -1,6 +1,6 @@
 import { state } from './state.js';
-import { performLogin, loadInitialData, loadAdvisories } from './api.js';
-import { initMap, drawCountries, renderAdvisoryMarkers, renderMissionMarkers } from './map.js';
+import { performLogin, loadInitialData } from './api.js';
+import { initMap, drawCountries, renderMissionMarkers } from './map.js';
 import { renderMissionsList, closeInfoPanel } from './ui.js';
 import { setupSearch } from './search.js';
 
@@ -53,24 +53,6 @@ async function init() {
 
         state.missions.sort((a, b) => a.name.localeCompare(b.name));
         renderMissionMarkers(state.missions);
-
-        try {
-            state.globalAdvisories = await loadAdvisories();
-            renderAdvisoryMarkers();
-        } catch(e) {
-            console.error('Error rendering advisories:', e);
-        }
-
-        const advisoryToggle = document.getElementById('advisory-toggle');
-        if (advisoryToggle) {
-            advisoryToggle.addEventListener('change', (e) => {
-                if (e.target.checked) {
-                    state.map.addLayer(state.advisoryLayerGroup);
-                } else {
-                    state.map.removeLayer(state.advisoryLayerGroup);
-                }
-            });
-        }
 
         state.map.on('click', () => {
             closeInfoPanel();

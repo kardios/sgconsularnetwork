@@ -4,9 +4,7 @@ export const state = {
     markers: [],
     countryLayer: null,
     userMarker: null,
-    countryNameMap: {},
-    globalAdvisories: [],
-    advisoryLayerGroup: null
+    countryNameMap: {}
 };
 
 export function normalizeCountryName(name) {

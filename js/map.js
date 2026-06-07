@@ -13,9 +13,6 @@ export function initMap() {
     }).addTo(state.map);
 
     L.control.zoom({ position: 'bottomright' }).addTo(state.map);
-
-    state.advisoryLayerGroup = L.layerGroup();
-    state.advisoryLayerGroup.addTo(state.map);
 }
 
 export function drawCountries(geojsonData) {
@@ -27,47 +24,6 @@ export function drawCountries(geojsonData) {
             fillOpacity: 0
         }
     }).addTo(state.map);
-}
-
-export function renderAdvisoryMarkers() {
-    const coordCounts = {};
-
-    state.globalAdvisories.forEach(adv => {
-        const key = `${adv.lat},${adv.lng}`;
-        if (!coordCounts[key]) coordCounts[key] = 0;
-        const offsetIdx = coordCounts[key]++;
-        
-        const lat = adv.lat;
-        const lng = adv.lng + (offsetIdx * 1.5);
-
-        const flagColor = adv.type === 'advisory' ? '#f87171' : '#facc15';
-        const icon = L.divIcon({
-            className: 'custom-flag-icon',
-            html: `<svg class="flag-marker flag-${adv.type}" viewBox="0 0 24 24">
-                            <path d="M5 21V4h9l1 2h5v10h-7l-1-2H7v7H5z"/>
-                           </svg>`,
-            iconSize: [22, 22],
-            iconAnchor: [-4, 26]
-        });
-
-        const marker = L.marker([lat, lng], {
-            icon,
-            zIndexOffset: 1000
-        });
-        state.advisoryLayerGroup.addLayer(marker);
-
-        adv.marker = marker;
-
-        marker.on('click', (e) => {
-            L.DomEvent.stopPropagation(e);
-            window.open(adv.link, '_blank');
-        });
-
-        marker.bindTooltip(adv.title, {
-            direction: 'top',
-            offset: [10, -20]
-        });
-    });
 }
 
 export function renderMissionMarkers(data) {
@@ -153,7 +109,7 @@ export function resetShading() {
     }
 }
 
-export function selectMission(m, item = null, userLat = null, userLng = null) {
+export function selectMission(m, item = null, userLat = null, userLng = null, secondaryMissionName = null, secondaryLabel = null) {
     document.querySelectorAll('.mission-item').forEach(i => i.classList.remove('active'));
     if (item) {
         item.classList.add('active');
@@ -197,8 +153,15 @@ export function selectMission(m, item = null, userLat = null, userLng = null) {
         state.map.flyTo([targetLat, targetLng], 6, { duration: 1.5 });
     }
 
-    showInfoPanel(m);
-    resetShading();
+    showInfoPanel(m, secondaryMissionName, secondaryLabel);
+    
+    const isCapitalMission = ['Embassy', 'High Commission'].includes(m.type) || (m.type === 'Trade Office' && m.city === 'Taipei');
+    if (isCapitalMission) {
+        const coverageAttr = m.coverage ? m.coverage : [m.country];
+        highlightCoverage(coverageAttr);
+    } else {
+        resetShading();
+    }
 }
 
 export function dropFallbackMarker(userLat, userLng) {

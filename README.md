@@ -7,7 +7,6 @@ An interactive map and routing system for Singapore's overseas missions. This ap
 - **Smart Routing**: Enter a location to find the covering mission, including handling for cross-accredited regions.
 - **Mission Details**: Quick access to addresses, contact information, and real-time operating status based on the mission's local timezone.
 - **Coverage Shading**: Visualize the geographical coverage of capital missions.
-- **Travel Advisories**: Displays global travel advisories and notices as interactive map flags.
 - **Secure Access**: The application is protected by a password gate.
 
 ## Tech Stack
