@@ -1199,9 +1199,9 @@ countries:
     capital_mission: Singapore Embassy in Riyadh
     fallback_when_unresolved: capital_mission
     sub_national:
-      - regions: [Western Region, Hejaz, Jeddah, Makkah, Madinah]
+      - regions: [Tabuk, Madinah, Makkah, Baha, Asir, Jizan, Jeddah, Hejaz, Western Region, Western Provinces]
         mission: Singapore Consulate-General in Jeddah
-      - regions: [Central Region, Najd, Riyadh, Eastern Province, Dammam, Khobar, Dhahran]
+      - regions: [Riyadh, Qasim, Hail, Najran, Northern Border, Jawf, Jubail, Dammam, Al Khobar, Central Region, Najd, Eastern Province, Khobar, Dhahran]
         mission: Singapore Embassy in Riyadh
 
   Malaysia:
@@ -1223,9 +1223,9 @@ countries:
     capital_mission: Singapore Embassy in Jakarta
     fallback_when_unresolved: capital_mission
     sub_national:
-      - regions: [Sumatra, Aceh, North Sumatra, West Sumatra, Riau, Jambi, South Sumatra, Bengkulu, Lampung]
+      - regions: [Aceh, North Sumatra, West Sumatra, South Sumatra, Jambi, Bangka Belitung, Bengkulu, Lampung]
         mission: Singapore Consulate-General in Medan
-      - regions: [Riau Islands, Batam, Bintan, Karimun]
+      - regions: [Batam, Bintan, Karimun, Anambas, Natuna, Lingga, Riau, Riau Province, Riau Islands]
         mission: Singapore Consulate-General in Batam
       - regions: [Java, Bali, Kalimantan, Sulawesi, Papua, Maluku, Nusa Tenggara, Jakarta]
         mission: Singapore Embassy in Jakarta
@@ -1257,9 +1257,9 @@ countries:
     capital_mission: Singapore High Commission in New Delhi
     fallback_when_unresolved: capital_mission
     sub_national:
-      - regions: [Maharashtra, Madhya Pradesh, Chhattisgarh, Goa, Gujarat, Odisha]
+      - regions: [Maharashtra, Madhya Pradesh, Chhattisgarh, Goa, Gujarat, Odisha, Orissa]
         mission: Singapore Consulate-General in Mumbai
-      - regions: [Andhra Pradesh, Karnataka, Kerala, Lakshadweep, Puducherry, Tamil Nadu, Telangana]
+      - regions: [Andhra Pradesh, Karnataka, Kerala, Lakshadweep, Puducherry, Pondicherry, Tamil Nadu, Telangana]
         mission: Singapore Consulate-General in Chennai
       - regions: [Jammu & Kashmir, Himachal Pradesh, Punjab, Haryana, Delhi, Rajasthan, Uttaranchal, Uttar Pradesh, Bihar, Jharkhand, West Bengal, Assam, Sikkim, Manipur, Meghalaya, Tripura, Arunachal Pradesh, Nagaland, Mizoram]
         mission: Singapore High Commission in New Delhi
@@ -1286,9 +1286,9 @@ countries:
     coverage_type: resident_multi_mission
     fallback_when_unresolved: list_all
     sub_national:
-      - regions: [Northern Vietnam, North Vietnam, Danang]
+      - regions: [Bac Giang, Bac Kan, Bac Ninh, Cao Bang, Đà Nang, Da Nang, Dien Bien, Ha Giang, Hà Nam, Ha Nam, Ha Noi, Hà Noi, Hà Tinh, Ha Tinh, Hai Duong, Hai Phòng, Hai Phong, Hoa Binh, Hung Yên, Hung Yen, Lai Chau, Lang Son, Lao Cai, Nam Đinh, Nam Dinh, Nghe An, Nghi An, Ninh Bình, Ninh Binh, Phu Tho, Quang Bình, Quang Binh, Quang Ninh, Quang Tri, Son La, Thái Bình, Thai Binh, Thái Nguyên, Thai Nguyen, Thanh Hoá, Thanh Hoa, Thia Thiên - Hue, Thua Thien - Hue, Thua Thien Hue, Tuyen Quang, Vinh Phuc, Yen Bai, Northern Vietnam, North Vietnam]
         mission: Singapore Embassy in Hanoi
-      - regions: [Southern Vietnam, South Vietnam]
+      - regions: [An Giang, Ba Ria-Vung Tau, Ba Ria - Vung Tau, Bac Lieu, Ben Tre, Bình Đinh, Binh Dinh, Binh Duong, Bình Phuoc, Binh Phuoc, Bình Thuan, Binh Thuan, Ca Mau, Can Tho, Dak Lak, Dac Lac, Dak Nong, Đong Nai, Dong Nai, Dong Thap, Gia Lai, Hau Giang, Ho Chi Minh City, HCMC, Khánh Hoà, Khanh Hoa, Kien Giang, Kon Tum, Lam Dong, Long An, Ninh Thuan, Phú Yên, Phu Yen, Quang Nam, Quang Ngãi, Quang Ngai, Soc Trang, Tây Ninh, Tay Ninh, Tien Giang, Trà Vinh, Tra Vinh, Vinh Long, Southern Vietnam, South Vietnam]
         mission: Singapore Consulate-General in Ho Chi Minh City
 
   Japan:
@@ -1296,6 +1296,13 @@ countries:
     capital: Tokyo
     coverage_type: resident_with_honoraries
     primary_mission: Singapore Embassy in Tokyo
+    sub_national:
+      - regions: [Aichi, Nagoya]
+        mission: Singapore Honorary Consulate-General in Nagoya
+      - regions: [Osaka, Kyoto, Hyogo, Nara, Shiga, Wakayama, Mie, Hiroshima, Okayama, Shimane, Tottori, Yamaguchi, Ehime, Kagawa, Kochi, Tokushima, Fukuoka, Saga, Nagasaki, Oita, Kumamoto, Miyazaki, Kagoshima, Kinki, Kansai, Chugoku, Shikoku, Kyushu, Okinawa]
+        mission: Singapore Honorary Consulate-General in Osaka
+      - regions: [Tokyo, Hokkaido, Aomori, Iwate, Miyagi, Akita, Yamagata, Fukushima, Ibaraki, Tochigi, Gunma, Saitama, Chiba, Kanagawa, Niigata, Toyama, Ishikawa, Fukui, Yamanashi, Nagano, Gifu, Shizuoka]
+        mission: Singapore Embassy in Tokyo
     honorary_offices:
       - mission: Singapore Honorary Consulate-General in Nagoya
         region_hint: "Local presence in Nagoya"
@@ -1307,6 +1314,15 @@ countries:
     capital: Berlin
     coverage_type: nearest_office
     primary_mission: Singapore Embassy in Berlin
+    sub_national:
+      - regions: [Baden-Württemberg, Baden-Wurttemberg, Hesse, Hessen, North Rhine-Westphalia, Nordrhein-Westfalen, Rhineland-Palatinate, Rheinland-Pfalz, Saarland]
+        mission: Singapore Honorary Consulate-General in Frankfurt
+      - regions: [Hamburg, Schleswig-Holstein]
+        mission: Singapore Honorary Consulate-General in Hamburg
+      - regions: [Bavaria, Bayern]
+        mission: Singapore Honorary Consulate-General in Munich
+      - regions: [Berlin, Brandenburg, Bremen, Lower Saxony, Niedersachsen, Mecklenburg-Vorpommern, Mecklenburg-Western Pomerania, Saxony, Sachsen, Saxony-Anhalt, Sachsen-Anhalt, Thuringia, Thuringen, Thüringen]
+        mission: Singapore Embassy in Berlin
     honorary_offices:
       - mission: Singapore Honorary Consulate-General in Hamburg
         region_hint: "Northern Germany — Hamburg, Schleswig-Holstein, Lower Saxony, Bremen, Mecklenburg-Vorpommern (informal)"
@@ -1547,6 +1563,18 @@ countries:
     coverage_type: cross_accredited
     accrediting_mission: Singapore Embassy in Seoul
 
+  Monaco:
+    aliases: [Principality of Monaco]
+    capital: Monaco
+    coverage_type: cross_accredited
+    accrediting_mission: Singapore Embassy in Paris
+
+  Andorra:
+    aliases: [Principality of Andorra]
+    capital: Andorra la Vella
+    coverage_type: cross_accredited
+    accrediting_mission: Singapore Embassy in Paris
+
   Portugal:
     aliases: []
     capital: Lisbon
@@ -1578,6 +1606,11 @@ countries:
     aliases: []
     capital: Ottawa
     coverage_type: nearest_honorary
+    sub_national:
+      - regions: [Ontario, 'ON']
+        mission: Singapore Honorary Consulate-General in Toronto
+      - regions: [British Columbia, BC, Vancouver]
+        mission: Singapore Honorary Consulate-General in Vancouver
     honorary_offices:
       - mission: Singapore Honorary Consulate-General in Toronto
         region_hint: "Local presence in Toronto"
@@ -1740,6 +1773,11 @@ countries:
     aliases: [Kingdom of Spain]
     capital: Madrid
     coverage_type: nearest_honorary
+    sub_national:
+      - regions: [Barcelona, Tarragona, Lleida, Girona]
+        mission: Singapore Honorary Consulate-General in Barcelona
+      - regions: [Madrid, Community of Madrid, Comunidad de Madrid]
+        mission: Singapore Honorary Consulate-General in Madrid
     honorary_offices:
       - mission: Singapore Honorary Consulate-General in Madrid
         region_hint: "Local presence in Madrid"
@@ -1753,3 +1791,275 @@ countries:
     honorary_offices:
       - mission: Singapore Honorary Consulate-General in Colombo
         region_hint: "Local presence in Colombo"
+
+  Yemen:
+    aliases: []
+    capital: Sana'a
+    coverage_type: cross_accredited
+    accrediting_mission: Singapore Embassy in Muscat
+
+  # --- NO RESIDENT MISSION LOCATIONS ---
+  American Samoa:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Anguilla:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Antarctica:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Aruba:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Bermuda:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Bouvet Island:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  British Indian Ocean Territory:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Cayman Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Christmas Island:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Cocos (Keeling) Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Falkland Islands (Malvinas):
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Faroe Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  French Guiana:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  French Polynesia:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  French Southern Territories:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Gibraltar:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Greenland:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Guadeloupe:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Guam:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Guernsey:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Heard Island and McDonald Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Isle of Man:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Jersey:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Martinique:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Montserrat:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Netherlands Antilles:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  New Caledonia:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Norfolk Island:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Northern Mariana Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Pitcairn:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Réunion:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Saint Helena, Ascension and Tristan Da Cunha:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Saint Pierre and Miquelon:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  San Marino:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Sao Tome and Principe:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  South Georgia and the South Sandwich Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Svalbard and Jan Mayen:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Tokelau:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Turks and Caicos Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Virgin Islands, British:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Virgin Islands, U.S.:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Wallis and Futuna:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Western Sahara:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+
+  Åland Islands:
+    aliases: []
+    capital: null
+    coverage_type: none
+    honorary_offices: []
+

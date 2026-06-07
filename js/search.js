@@ -1,7 +1,7 @@
 import { state } from './state.js';
 import { routeLocation } from './api.js';
 import { selectMission, dropFallbackMarker } from './map.js';
-import { renderMissionsList } from './ui.js';
+import { renderMissionsList, closeInfoPanel } from './ui.js';
 
 let debounceTimer = null;
 let currentAbortController = null;
@@ -101,19 +101,25 @@ export async function smartSearch(location, isFinal = false) {
 
             if (routingType && routingType.startsWith('cross_accredited')) {
                 statusLabel.textContent = `No local presence. Routing to accredited mission: ${missionName}`;
+                statusLabel.style.color = "#4ade80"; 
+            } else if (routingType === 'nearest_resident') {
+                statusLabel.textContent = `No resident mission in this location. Nearest: ${missionName}`;
+                statusLabel.style.color = "#facc15"; 
             } else {
                 statusLabel.textContent = `Routed to ${missionName}`;
+                statusLabel.style.color = "#4ade80"; 
             }
-            statusLabel.style.color = "#4ade80"; 
             setTimeout(() => { if (statusLabel.textContent.includes("Routed")) statusLabel.textContent = ""; }, 3000);
         } else {
+            if (isFinal) {
+                closeInfoPanel();
+                if (userLat !== null && userLng !== null) {
+                    dropFallbackMarker(userLat, userLng);
+                }
+            }
             if (missionName === "MFA HQ") {
                 statusLabel.textContent = `No resident mission in this location.`;
                 statusLabel.style.color = "#facc15"; 
-
-                if (isFinal && userLat !== null && userLng !== null) {
-                    dropFallbackMarker(userLat, userLng);
-                }
             } else {
                 statusLabel.textContent = `No match for "${missionName}"`;
                 statusLabel.style.color = "#facc15"; 

@@ -127,10 +127,22 @@ def normalize_country(country, mapping):
     # Return the mapped name if it exists, otherwise return the original country name
     return mapping.get(country, country)
 
+import unicodedata
+
 def clean_string(s):
-    if not s:
+    if not s or not isinstance(s, str):
         return ""
-    return "".join(c.lower() for c in s if c.isalnum())
+    # Convert to lowercase and replace special Vietnamese character 'đ'
+    s = s.lower().replace('đ', 'd')
+    # Normalize to decompose accents/diacritics and filter them out
+    s = "".join(c for c in unicodedata.normalize('NFKD', s) if not unicodedata.combining(c))
+    # Keep only alphanumeric characters
+    s_clean = "".join(c for c in s if c.isalnum())
+    # Trim common administrative suffixes from the end
+    for suffix in ["province", "prefecture", "state", "region", "autonomousregion", "community", "department"]:
+        if s_clean.endswith(suffix):
+            s_clean = s_clean[:-len(suffix)]
+    return s_clean
 
 def route_by_rules(country, user_lat, user_lng, data, missions_data, address=None):
     countries_data = data.get('countries', {})
@@ -156,6 +168,9 @@ def route_by_rules(country, user_lat, user_lng, data, missions_data, address=Non
                     clean_regions = [clean_string(r) for r in regions]
                     if (clean_state and clean_state in clean_regions) or (clean_city and clean_city in clean_regions):
                         return {"mission": entry.get('mission'), "type": "resident"}
+                
+                if rule.get('restrict_to_sub_national') and (clean_state or clean_city):
+                    return None
 
             # 2. Check for legacy provinces block if present
             if state and rule.get('provinces'):
@@ -260,6 +275,19 @@ def route_by_rules(country, user_lat, user_lng, data, missions_data, address=Non
         if closest_mission:
             return {"mission": closest_mission, "type": "resident"}
             
+    # Find the nearest mission globally (including honorary offices)
+    nearest_mission = None
+    min_dist = float('inf')
+    for m_name, m_info in missions_data.items():
+        if m_info.get('lat') and m_info.get('lng'):
+            dist = geodesic((user_lat, user_lng), (m_info['lat'], m_info['lng'])).km
+            if dist < min_dist:
+                min_dist = dist
+                nearest_mission = m_name
+                
+    if nearest_mission:
+        return {"mission": nearest_mission, "type": "nearest_resident"}
+            
     return None
 
 geolocator = Nominatim(user_agent="antigravity_mission_router")
@@ -299,29 +327,30 @@ async def route_location(req: Request, payload: LocationRequest):
                     first_key = next(iter(query_cache))
                     del query_cache[first_key]
 
-        if location and location.raw.get('address'):
-            address = location.raw['address']
-            country = address.get('country')
+        if location:
+            address = location.raw.get('address') if location.raw else None
+            country = address.get('country') if address else None
             if country:
                 country = normalize_country(country, country_mapping)
-                route_result = route_by_rules(country, location.latitude, location.longitude, data, missions_data, address)
-                
-                if route_result and route_result['mission'] in missions_list:
-                    mission_name = route_result['mission']
-                    routing_type = route_result['type']
-                    print(f"Routing '{payload.location}' to: {mission_name} ({routing_type})")
-                    res = {
-                        "mission": mission_name, 
-                        "routing_type": routing_type,
-                        "lat": location.latitude,
-                        "lng": location.longitude,
-                        "queried_country": country
-                    }
-                    if 'secondary_mission' in route_result:
-                        res['secondary_mission'] = route_result['secondary_mission']
-                    if 'secondary_label' in route_result:
-                        res['secondary_label'] = route_result['secondary_label']
-                    return res
+            
+            route_result = route_by_rules(country, location.latitude, location.longitude, data, missions_data, address)
+            
+            if route_result and route_result.get('mission') in missions_list:
+                mission_name = route_result['mission']
+                routing_type = route_result['type']
+                print(f"Routing '{payload.location}' to: {mission_name} ({routing_type})")
+                res = {
+                    "mission": mission_name, 
+                    "routing_type": routing_type,
+                    "lat": location.latitude,
+                    "lng": location.longitude,
+                    "queried_country": country
+                }
+                if 'secondary_mission' in route_result:
+                    res['secondary_mission'] = route_result['secondary_mission']
+                if 'secondary_label' in route_result:
+                    res['secondary_label'] = route_result['secondary_label']
+                return res
         
         # If geocoding finds something but no rules match, return MFA HQ as fallback
         # If location was found, we can still return coordinates to center the map
