@@ -18,7 +18,9 @@
     *   List the `accrediting_mission` under a section titled **SUPERVISING RESIDENT MISSION** (include Website).
 7.  **IF** country is `cross_accredited`[cite: 1]:
     *   Set the `accrediting_mission` as primary **COVERAGE** and display its **Website** automatically[cite: 1].
-7.  **ELSE** (Resident Missions)[cite: 1]:
+8.  **IF** country is `informal_coverage`:
+    *   Set the `covering_mission` as primary **COVERAGE** and display its **Website** automatically.
+9.  **ELSE** (Resident Missions)[cite: 1]:
     *   Route to the `primary_mission` or the specific mission for that region (e.g., Vietnam or UAE sub-national routing) and display its **Website**[cite: 1].
 6.  **ALWAYS INCLUDE**: Regardless of the destination, append the **MFA HQ Consular Response Centre** details and the general **MFA Website**[cite: 1].
 

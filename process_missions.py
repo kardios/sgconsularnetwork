@@ -24,17 +24,17 @@ def geocode(address, city, country, cache):
     if query in cache:
         return cache[query]
     
+    query_fallback = f"{city}, {country}"
+    if query_fallback in cache:
+        return cache[query_fallback]
+    
     # Try with full address
     coords = _fetch_nominatim(query)
     if coords:
         cache[query] = coords
         return coords
     
-    # Try with city and country
-    query_fallback = f"{city}, {country}"
-    if query_fallback in cache:
-        return cache[query_fallback]
-    
+    time.sleep(1) # Rate limit protection
     coords = _fetch_nominatim(query_fallback)
     if coords:
         cache[query_fallback] = coords
@@ -61,15 +61,20 @@ def main():
     with open(YAML_PATH, 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
     
-    # Map mission name to list of countries covered
+    # Map mission name to list of countries covered and their coverage types
     coverage_map = {}
+    coverage_types_map = {}
     countries_data = data.get('countries', {})
     for country_name, info in countries_data.items():
-        accrediting_mission = info.get('accrediting_mission')
-        if accrediting_mission:
-            if accrediting_mission not in coverage_map:
-                coverage_map[accrediting_mission] = []
-            coverage_map[accrediting_mission].append(country_name)
+        covering_mission = info.get('accrediting_mission') or info.get('covering_mission')
+        if covering_mission:
+            if covering_mission not in coverage_map:
+                coverage_map[covering_mission] = []
+            coverage_map[covering_mission].append(country_name)
+            
+            if covering_mission not in coverage_types_map:
+                coverage_types_map[covering_mission] = {}
+            coverage_types_map[covering_mission][country_name] = info.get('coverage_type', '')
 
     missions_data = data.get('missions', {})
     cache = get_cache()
@@ -112,7 +117,8 @@ def main():
             'hours': details.get('operating_hours', {}),
             'lat': lat_lng[0] if lat_lng else None,
             'lng': lat_lng[1] if lat_lng else None,
-            'coverage': mission_coverage
+            'coverage': mission_coverage,
+            'coverage_types': coverage_types_map.get(name, {})
         }
         processed.append(mission_info)
         

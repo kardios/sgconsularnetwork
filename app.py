@@ -182,6 +182,9 @@ def route_by_rules(country, user_lat, user_lng, data, missions_data, address=Non
         if ctype == 'cross_accredited':
             return {"mission": rule.get('accrediting_mission'), "type": ctype}
             
+        elif ctype == 'informal_coverage':
+            return {"mission": rule.get('covering_mission') or rule.get('accrediting_mission'), "type": ctype}
+            
         elif ctype == 'cross_accredited_with_honorary':
             hon_offices = rule.get('honorary_offices', [])
             if hon_offices:

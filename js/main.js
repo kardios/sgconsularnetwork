@@ -1,8 +1,8 @@
-import { state } from './state.js';
-import { performLogin, loadInitialData } from './api.js';
-import { initMap, drawCountries, renderMissionMarkers } from './map.js';
-import { renderMissionsList, closeInfoPanel } from './ui.js';
-import { setupSearch } from './search.js';
+import { state } from './state.js?v=6';
+import { performLogin, loadInitialData } from './api.js?v=6';
+import { initMap, drawCountries, renderMissionMarkers } from './map.js?v=6';
+import { renderMissionsList, closeInfoPanel } from './ui.js?v=6';
+import { setupSearch } from './search.js?v=6';
 
 async function init() {
     const loginOverlay = document.getElementById('login-overlay');

@@ -1,5 +1,5 @@
-import { state, normalizeCountryName } from './state.js';
-import { selectMission } from './map.js';
+import { state, normalizeCountryName } from './state.js?v=6';
+import { selectMission } from './map.js?v=6';
 
 export function getMissionLocalStatus(hours) {
     if (!hours || !hours.timezone || !hours.schedule) {
@@ -88,16 +88,8 @@ export function showInfoPanel(m, secondaryMissionName = null, secondaryLabel = n
         clone.querySelector('.tpl-emergency-row').style.display = 'none';
     }
     
-    if (m.hours && m.hours.by_appointment !== undefined) {
-        clone.querySelector('.tpl-appointment').textContent = m.hours.by_appointment ? 'Required' : 'Not Required';
-    } else {
-        clone.querySelector('.tpl-appointment-row').style.display = 'none';
-    }
-    
     if (m.hours && m.hours.schedule) {
-        const { localTime, localDate, statusText, statusClass } = getMissionLocalStatus(m.hours);
-        clone.querySelector('.tpl-status').textContent = statusText;
-        clone.querySelector('.tpl-status').className = `status-badge tpl-status ${statusClass}`;
+        const { localTime, localDate } = getMissionLocalStatus(m.hours);
         clone.querySelector('.tpl-local-datetime').textContent = `${localDate}, ${localTime}`;
         
         const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
@@ -121,7 +113,7 @@ export function showInfoPanel(m, secondaryMissionName = null, secondaryLabel = n
 
         const hoursHtml = groups.map(g => {
             const dayStr = g.startDay === g.endDay ? g.startDay : `${g.startDay}-${g.endDay}`;
-            return `<div style="display: flex; justify-content: space-between; gap: 8px;"><span style="color: var(--text-dim);">${dayStr}</span> <span>${g.hours.replace(/,/g, ', ')}</span></div>`;
+            return `<div style="display: flex; gap: 16px;"><span style="color: var(--text-dim); flex: 0 0 80px;">${dayStr}</span><span>${g.hours.replace(/,/g, ', ')}</span></div>`;
         }).join('');
         
         clone.querySelector('.tpl-hours-list').innerHTML = hoursHtml;
@@ -131,7 +123,18 @@ export function showInfoPanel(m, secondaryMissionName = null, secondaryLabel = n
     
     if (isCapitalMission) {
         const coverageAttr = m.coverage ? m.coverage : [m.country];
-        clone.querySelector('.tpl-covers').textContent = coverageAttr.join(', ');
+        const formattedCoverage = coverageAttr.map(country => {
+            if (m.coverage_types && m.coverage_types[country]) {
+                const type = m.coverage_types[country];
+                if (type === 'informal_coverage') {
+                    return `${country} (informal coverage)`;
+                } else if (type === 'cross_accredited' || type === 'cross_accredited_with_honorary') {
+                    return `${country} (cross-accredited)`;
+                }
+            }
+            return country;
+        });
+        clone.querySelector('.tpl-covers').textContent = formattedCoverage.join(', ');
     } else {
         clone.querySelector('.tpl-covers-row').style.display = 'none';
     }
@@ -169,7 +172,7 @@ export function showInfoPanel(m, secondaryMissionName = null, secondaryLabel = n
 export function closeInfoPanel() {
     document.getElementById('info-panel').classList.remove('visible');
     document.querySelectorAll('.mission-item').forEach(i => i.classList.remove('active'));
-    import('./map.js').then(module => {
+    import('./map.js?v=6').then(module => {
         module.resetShading();
         if (state.userMarker) {
             state.map.removeLayer(state.userMarker);

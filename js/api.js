@@ -7,10 +7,11 @@ export async function performLogin(password) {
 }
 
 export async function loadInitialData() {
+    const t = Date.now();
     const [missionsRes, countriesRes, mappingRes] = await Promise.all([
-        fetch('missions.json'),
-        fetch('countries.json'),
-        fetch('country_mapping.json')
+        fetch(`missions.json?t=${t}`),
+        fetch(`countries.json?t=${t}`),
+        fetch(`country_mapping.json?t=${t}`)
     ]);
 
     if (missionsRes.status === 401 || countriesRes.status === 401 || mappingRes.status === 401) {

@@ -1,7 +1,7 @@
-import { state } from './state.js';
-import { routeLocation } from './api.js';
-import { selectMission, dropFallbackMarker } from './map.js';
-import { renderMissionsList, closeInfoPanel } from './ui.js';
+import { state } from './state.js?v=6';
+import { routeLocation } from './api.js?v=6';
+import { selectMission, dropFallbackMarker } from './map.js?v=6';
+import { renderMissionsList, closeInfoPanel } from './ui.js?v=6';
 
 let debounceTimer = null;
 let currentAbortController = null;
@@ -101,6 +101,9 @@ export async function smartSearch(location, isFinal = false) {
 
             if (routingType && routingType.startsWith('cross_accredited')) {
                 statusLabel.textContent = `No local presence. Routing to accredited mission: ${missionName}`;
+                statusLabel.style.color = "#4ade80"; 
+            } else if (routingType === 'informal_coverage') {
+                statusLabel.textContent = `No local presence. Routing to mission with informal coverage: ${missionName}`;
                 statusLabel.style.color = "#4ade80"; 
             } else if (routingType === 'nearest_resident') {
                 statusLabel.textContent = `No resident mission in this location. Nearest: ${missionName}`;

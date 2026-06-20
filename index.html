@@ -46,26 +46,6 @@
     <div class="info-panel" id="info-panel">
         <button class="close-btn" id="close-info-btn"><span>✕</span></button>
         <div id="info-content"></div>
-        <div class="mfa-hq-card">
-            <h3 class="mfa-hq-title">🇸🇬 MFA HQ Consular Response Centre</h3>
-            <p class="mfa-hq-subtitle">24-Hour Emergency Hotlines</p>
-            <div class="info-row">
-                <div class="info-label">Emergency</div>
-                <div class="info-value"><a href="tel:+6563798800" class="tel-link emergency-highlight">+65 6379 8800</a></div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">General Line</div>
-                <div class="info-value"><a href="tel:+6563798000" class="tel-link">+65 6379 8000</a></div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">Email</div>
-                <div class="info-value"><a href="mailto:mfa@mfa.gov.sg" class="email-link">mfa@mfa.gov.sg</a></div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">Website</div>
-                <div class="info-value"><a href="https://www.mfa.gov.sg" target="_blank" class="web-link">www.mfa.gov.sg</a></div>
-            </div>
-        </div>
     </div>
 
     <template id="tpl-info-panel">
@@ -92,16 +72,7 @@
                 <div class="info-value"><span class="tpl-emergency" style="color: #ef4444; font-weight: 600;"></span></div>
             </div>
             
-            <div class="info-row tpl-appointment-row">
-                <div class="info-label">Appointment</div>
-                <div class="info-value tpl-appointment"></div>
-            </div>
-            
             <div class="info-row tpl-hours-row" style="flex-direction: column; align-items: flex-start; gap: 4px;">
-                <div class="info-label" style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
-                    Operating Hours
-                    <span class="status-badge tpl-status"></span>
-                </div>
                 <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-main); margin-bottom: 8px;">
                     <span class="tpl-local-datetime"></span> <span style="font-weight: 300; color: var(--text-dim); font-size: 0.75rem;">(Local Time)</span>
                 </div>
@@ -122,6 +93,6 @@
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js?v=6"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     "phone": "+55-61-2191 6565",
     "email": "singemb_bsb@mfa.sg",
     "website": "https://brasilia.mfa.gov.sg",
-    "emergency": "+55 (61) 99584 9583",
+    "emergency": "+55 61 99584 9583",
     "hours": {
       "timezone": "America/Sao_Paulo",
       "schedule": {
@@ -27,7 +27,8 @@
     "lng": -47.8828,
     "coverage": [
       "Federative Republic of Brazil"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate in New York",
@@ -39,7 +40,7 @@
     "phone": "+1-212-223-3331",
     "email": "singcon_nyc@mfa.sg",
     "website": "https://newyork-consulate.mfa.gov.sg",
-    "emergency": "+1 212 223 3331 ext 151",
+    "emergency": "+1 917 293 4540",
     "hours": {
       "timezone": "America/New_York",
       "schedule": {
@@ -57,7 +58,8 @@
     "lng": -74.0060152,
     "coverage": [
       "United States of America"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in San Francisco",
@@ -87,7 +89,8 @@
     "lng": -122.4075201,
     "coverage": [
       "United States of America"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Washington DC",
@@ -99,7 +102,7 @@
     "phone": "+1-202-537-3100",
     "email": "singemb_was@mfa.sg",
     "website": "https://washington.mfa.gov.sg",
-    "emergency": "+1-202-537-3100 Ext 140",
+    "emergency": "+1 202 537 3100 x140",
     "hours": {
       "timezone": "America/New_York",
       "schedule": {
@@ -117,7 +120,8 @@
     "lng": -77.0653643,
     "coverage": [
       "United States of America"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate in Miami",
@@ -147,7 +151,8 @@
     "lng": -80.1935973,
     "coverage": [
       "United States of America"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Toronto",
@@ -177,7 +182,8 @@
     "lng": -79.3839347,
     "coverage": [
       "Canada"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Vancouver",
@@ -207,7 +213,8 @@
     "lng": -123.113952,
     "coverage": [
       "Canada"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Santiago",
@@ -237,7 +244,8 @@
     "lng": -70.6510671,
     "coverage": [
       "Chile"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate in Bogota",
@@ -267,7 +275,8 @@
     "lng": -74.0836331,
     "coverage": [
       "Colombia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate in Mexico City",
@@ -297,7 +306,8 @@
     "lng": -99.1331785,
     "coverage": [
       "Mexico"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Lima",
@@ -327,7 +337,8 @@
     "lng": -77.06132,
     "coverage": [
       "Peru"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Beijing",
@@ -339,7 +350,7 @@
     "phone": "+86-10-6532-1115",
     "email": "singemb_bej@mfa.sg",
     "website": "http://www.mfa.gov.sg/beijing",
-    "emergency": "+86-1391-0755-251",
+    "emergency": "+86 139 1075 5251",
     "hours": {
       "timezone": "Asia/Shanghai",
       "schedule": {
@@ -357,7 +368,8 @@
     "lng": 116.3912972,
     "coverage": [
       "People's Republic of China"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Chengdu",
@@ -369,7 +381,7 @@
     "phone": "+86-28-8652 7222",
     "email": "singcg_cgu@mfa.sg",
     "website": "https://chengdu.mfa.gov.sg",
-    "emergency": "+86-1390-807-3562",
+    "emergency": "+86 139 0807 3562",
     "hours": {
       "timezone": "Asia/Shanghai",
       "schedule": {
@@ -387,7 +399,8 @@
     "lng": 104.063315,
     "coverage": [
       "People's Republic of China"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Guangzhou",
@@ -399,7 +412,7 @@
     "phone": "+86-20-3891-2345",
     "email": "singcg_gzu@mfa.sg",
     "website": "https://guangzhou.mfa.gov.sg",
-    "emergency": "+86-1392-229-6253",
+    "emergency": "+86 139 2229 6253",
     "hours": {
       "timezone": "Asia/Shanghai",
       "schedule": {
@@ -417,7 +430,8 @@
     "lng": 113.2590064,
     "coverage": [
       "People's Republic of China"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Shanghai",
@@ -429,7 +443,7 @@
     "phone": "+86-21-6278-5566",
     "email": "singcg_sha@mfa.sg",
     "website": "https://shanghai.mfa.gov.sg",
-    "emergency": "+86-1380-194-9439",
+    "emergency": "+86 1380 1949 439",
     "hours": {
       "timezone": "Asia/Shanghai",
       "schedule": {
@@ -447,7 +461,8 @@
     "lng": 121.3965619,
     "coverage": [
       "People's Republic of China"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Xiamen",
@@ -459,7 +474,7 @@
     "phone": "+86-592-268-4691",
     "email": "singcg_xmn@mfa.sg",
     "website": "https://xiamen.mfa.gov.sg",
-    "emergency": "+86-138-0607-1221",
+    "emergency": "+86 138 0607 1221",
     "hours": {
       "timezone": "Asia/Shanghai",
       "schedule": {
@@ -477,7 +492,8 @@
     "lng": 118.0853479,
     "coverage": [
       "People's Republic of China"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Hong Kong",
@@ -489,7 +505,7 @@
     "phone": "+852 2527-2212",
     "email": "singcg_hkg@mfa.sg",
     "website": "https://hongkong.mfa.gov.sg",
-    "emergency": "+852 9466-1251",
+    "emergency": "+852 9466 1251",
     "hours": {
       "timezone": "Asia/Hong_Kong",
       "schedule": {
@@ -507,7 +523,8 @@
     "lng": 114.1857978,
     "coverage": [
       "People's Republic of China"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Tokyo",
@@ -519,7 +536,7 @@
     "phone": "+81-3-3586-9111",
     "email": "singemb_tyo@mfa.sg",
     "website": "https://tokyo.mfa.gov.sg",
-    "emergency": "+81-90-5258-3252",
+    "emergency": "+81 90 5949 6366 / +81 90 5258 3252",
     "hours": {
       "timezone": "Asia/Tokyo",
       "schedule": {
@@ -537,7 +554,8 @@
     "lng": 139.7352804,
     "coverage": [
       "Japan"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Nagoya",
@@ -567,7 +585,8 @@
     "lng": 136.8998438,
     "coverage": [
       "Japan"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Osaka",
@@ -597,7 +616,8 @@
     "lng": 135.5014539,
     "coverage": [
       "Japan"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Seoul",
@@ -609,7 +629,7 @@
     "phone": "+82-2-774-2464",
     "email": "singemb_seo@mfa.sg",
     "website": "https://seoul.mfa.gov.sg",
-    "emergency": "+82-10-7204-6240",
+    "emergency": "+82 10 7204 6240",
     "hours": {
       "timezone": "Asia/Seoul",
       "schedule": {
@@ -628,7 +648,10 @@
     "coverage": [
       "Mongolia",
       "Republic of Korea"
-    ]
+    ],
+    "coverage_types": {
+      "Mongolia": "cross_accredited"
+    }
   },
   {
     "name": "Singapore Trade Office in Taipei",
@@ -640,7 +663,7 @@
     "phone": "+886-2-2772-1940",
     "email": "singtr_tpe@mfa.sg",
     "website": "https://taipei.mfa.gov.sg",
-    "emergency": "+886-953-532-638",
+    "emergency": "+886 953 532 638",
     "hours": {
       "timezone": "Asia/Taipei",
       "schedule": {
@@ -658,7 +681,8 @@
     "lng": 121.5636796,
     "coverage": [
       "Taiwan"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in Canberra",
@@ -670,7 +694,7 @@
     "phone": "+61-2-6271-2000",
     "email": "singhc_cbr@mfa.sg",
     "website": "https://canberra.mfa.gov.sg",
-    "emergency": "+61-414-733-944",
+    "emergency": "+61 414 733 944",
     "hours": {
       "timezone": "Australia/Canberra",
       "schedule": {
@@ -688,7 +712,8 @@
     "lng": 149.1168109,
     "coverage": [
       "Australia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in Wellington",
@@ -700,7 +725,7 @@
     "phone": "+64-4-470-0850",
     "email": "singhc_wlg@mfa.sg",
     "website": "https://wellington.mfa.gov.sg",
-    "emergency": "+64-21-280-3161",
+    "emergency": "+64 21 280 3161",
     "hours": {
       "timezone": "Pacific/Auckland",
       "schedule": {
@@ -718,7 +743,8 @@
     "lng": 174.7860094,
     "coverage": [
       "New Zealand"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in New Delhi",
@@ -730,7 +756,7 @@
     "phone": "+91-11-4600-0800",
     "email": "singhc_del@mfa.sg",
     "website": "https://new-delhi.mfa.gov.sg",
-    "emergency": "+91-981-020-3595",
+    "emergency": "+91 98 1020 3595",
     "hours": {
       "timezone": "Asia/Kolkata",
       "schedule": {
@@ -750,7 +776,11 @@
       "Bhutan",
       "Nepal",
       "India"
-    ]
+    ],
+    "coverage_types": {
+      "Bhutan": "cross_accredited",
+      "Nepal": "cross_accredited"
+    }
   },
   {
     "name": "Singapore Consulate-General in Chennai",
@@ -762,7 +792,7 @@
     "phone": "+91-44-2432-0050",
     "email": "singcon_maa@mfa.sg",
     "website": "https://chennai.mfa.gov.sg",
-    "emergency": "+91-984-003-3136",
+    "emergency": "+91 98 4003 3136",
     "hours": {
       "timezone": "Asia/Kolkata",
       "schedule": {
@@ -780,7 +810,8 @@
     "lng": 80.270186,
     "coverage": [
       "India"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Mumbai",
@@ -792,7 +823,7 @@
     "phone": "+91 22-6150-2900",
     "email": "singcon_bom@mfa.sg",
     "website": "https://mumbai.mfa.gov.sg",
-    "emergency": "+91-82910 32836",
+    "emergency": "+91 82910 32836",
     "hours": {
       "timezone": "Asia/Kolkata",
       "schedule": {
@@ -810,7 +841,8 @@
     "lng": 72.8692035,
     "coverage": [
       "India"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in Dhaka",
@@ -822,7 +854,7 @@
     "phone": "+880-2-222-280-404",
     "email": "singhc_dha@mfa.sg",
     "website": "https://dhaka.mfa.gov.sg",
-    "emergency": "+880-181-955-7146",
+    "emergency": "+880 181 955 7146",
     "hours": {
       "timezone": "Asia/Dhaka",
       "schedule": {
@@ -840,7 +872,8 @@
     "lng": 90.3890144,
     "coverage": [
       "Bangladesh"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in Bandar Seri Begawan",
@@ -852,7 +885,7 @@
     "phone": "+673-2262-741",
     "email": "singhc_bwn@mfa.sg",
     "website": "https://brunei.mfa.gov.sg",
-    "emergency": "+673-8751-778",
+    "emergency": "+673 875 1778",
     "hours": {
       "timezone": "Asia/Brunei",
       "schedule": {
@@ -870,7 +903,8 @@
     "lng": 114.9417574,
     "coverage": [
       "Negara Brunei Darussalam"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Phnom Penh",
@@ -882,7 +916,7 @@
     "phone": "+855-23-221-875",
     "email": "singemb_pnh@mfa.sg",
     "website": "https://phnompenh.mfa.gov.sg",
-    "emergency": "+855-977017371",
+    "emergency": "+855 97 701 7371",
     "hours": {
       "timezone": "Asia/Phnom_Penh",
       "schedule": {
@@ -900,7 +934,8 @@
     "lng": 104.9272158,
     "coverage": [
       "Cambodia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Jakarta",
@@ -912,7 +947,7 @@
     "phone": "+62 21 5091 5400",
     "email": "singemb_jkt@mfa.sg",
     "website": "https://jakarta.mfa.gov.sg",
-    "emergency": "+62 21 5091 5400",
+    "emergency": "+62 811 863 348",
     "hours": {
       "timezone": "Asia/Jakarta",
       "schedule": {
@@ -930,7 +965,8 @@
     "lng": 106.827168,
     "coverage": [
       "Indonesia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Batam",
@@ -960,7 +996,8 @@
     "lng": 104.0383696,
     "coverage": [
       "Indonesia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Medan",
@@ -972,7 +1009,7 @@
     "phone": "+62-61-8050-1500",
     "email": "sporeconsulatemedan@mfa.sg",
     "website": "https://medan.mfa.gov.sg",
-    "emergency": "+62-811-6170-339",
+    "emergency": "+62 811 6130 339",
     "hours": {
       "timezone": "Asia/Jakarta",
       "schedule": {
@@ -990,7 +1027,8 @@
     "lng": 98.6741623,
     "coverage": [
       "Indonesia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Vientiane",
@@ -1002,7 +1040,7 @@
     "phone": "+856-21-353-939",
     "email": "singemb_vte@mfa.sg",
     "website": "https://vientiane.mfa.gov.sg",
-    "emergency": "+856-20-5559-9059",
+    "emergency": "+856 20 5559 9059",
     "hours": {
       "timezone": "Asia/Vientiane",
       "schedule": {
@@ -1020,7 +1058,8 @@
     "lng": 102.6133707,
     "coverage": [
       "Lao People's Democratic Republic"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in Kuala Lumpur",
@@ -1032,7 +1071,7 @@
     "phone": "+60-3-2161-6277",
     "email": "singhc_kul@mfa.sg",
     "website": "https://kl.mfa.gov.sg",
-    "emergency": "+60-3-2161-6277",
+    "emergency": "+60 16 661 0400",
     "hours": {
       "timezone": "Asia/Kuala_Lumpur",
       "schedule": {
@@ -1050,7 +1089,8 @@
     "lng": 101.721061,
     "coverage": [
       "Malaysia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Johor Bahru",
@@ -1062,7 +1102,7 @@
     "phone": "+60-7-335-0130",
     "email": "singcon_jhb@mfa.sg",
     "website": "https://jb.mfa.gov.sg",
-    "emergency": "+60-19-791-1166",
+    "emergency": "+60 19 791 1166",
     "hours": {
       "timezone": "Asia/Kuala_Lumpur",
       "schedule": {
@@ -1080,7 +1120,8 @@
     "lng": 103.7649059,
     "coverage": [
       "Malaysia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Yangon",
@@ -1110,7 +1151,8 @@
     "lng": 96.1609916,
     "coverage": [
       "Myanmar"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Manila",
@@ -1122,7 +1164,7 @@
     "phone": "+63-2-8856-9922",
     "email": "singemb_mnl@mfa.sg",
     "website": "https://manila.mfa.gov.sg",
-    "emergency": "+63-917-860-4740",
+    "emergency": "+63 917 860 4740",
     "hours": {
       "timezone": "Asia/Manila",
       "schedule": {
@@ -1140,7 +1182,8 @@
     "lng": 120.9803621,
     "coverage": [
       "Philippines"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Bangkok",
@@ -1152,7 +1195,7 @@
     "phone": "+66-2-348-6700",
     "email": "singemb_bkk@mfa.sg",
     "website": "https://bangkok.mfa.gov.sg",
-    "emergency": "+66-81-844-3580",
+    "emergency": "+66 81 844 3580",
     "hours": {
       "timezone": "Asia/Bangkok",
       "schedule": {
@@ -1170,7 +1213,8 @@
     "lng": 100.4935089,
     "coverage": [
       "Thailand"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Dili",
@@ -1182,7 +1226,7 @@
     "phone": "+670 331 0260",
     "email": "singemb_dil@mfa.sg",
     "website": "https://dili.mfa.gov.sg",
-    "emergency": "+65 6379 8800",
+    "emergency": "+670 7377 8888",
     "hours": {
       "timezone": "Asia/Dili",
       "schedule": {
@@ -1200,7 +1244,8 @@
     "lng": 125.5784093,
     "coverage": [
       "Timor-Leste"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Hanoi",
@@ -1212,7 +1257,7 @@
     "phone": "+84-24-3848-9168",
     "email": "singemb_han@mfa.sg",
     "website": "https://hanoi.mfa.gov.sg",
-    "emergency": "+84-904-696-589",
+    "emergency": "+84 90 4696589",
     "hours": {
       "timezone": "Asia/Ho_Chi_Minh",
       "schedule": {
@@ -1230,7 +1275,8 @@
     "lng": 105.854041,
     "coverage": [
       "Vietnam"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Ho Chi Minh City",
@@ -1242,7 +1288,7 @@
     "phone": "+84-28-3822-5174",
     "email": "singcg_hcm@mfa.sg",
     "website": "https://hochiminhcity.mfa.gov.sg",
-    "emergency": "+84-903-113-500",
+    "emergency": "+84 90 3113 500",
     "hours": {
       "timezone": "Asia/Ho_Chi_Minh",
       "schedule": {
@@ -1260,7 +1306,8 @@
     "lng": 106.7166008,
     "coverage": [
       "Vietnam"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Port Moresby",
@@ -1290,7 +1337,8 @@
     "lng": 147.1599504,
     "coverage": [
       "Papua New Guinea"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Colombo",
@@ -1320,7 +1368,8 @@
     "lng": 79.8542005,
     "coverage": [
       "Sri Lanka"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Karachi",
@@ -1350,7 +1399,8 @@
     "lng": 67.0207055,
     "coverage": [
       "Pakistan"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Moscow",
@@ -1362,7 +1412,7 @@
     "phone": "+7 499-241-3913",
     "email": "singemb_mow@mfa.sg",
     "website": "https://moscow.mfa.gov.sg",
-    "emergency": "+7-906-009-0069",
+    "emergency": "+7 906 009 0069",
     "hours": {
       "timezone": "Europe/Moscow",
       "schedule": {
@@ -1380,7 +1430,8 @@
     "lng": 37.5855975,
     "coverage": [
       "Russian Federation"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Brussels",
@@ -1392,7 +1443,7 @@
     "phone": "+32-2-660-2979",
     "email": "singemb_bru@mfa.sg",
     "website": "https://brussels.mfa.gov.sg",
-    "emergency": "+32-475-618-265",
+    "emergency": "+32 475 618 265",
     "hours": {
       "timezone": "Europe/Brussels",
       "schedule": {
@@ -1412,7 +1463,11 @@
       "Luxembourg",
       "Netherlands",
       "Belgium"
-    ]
+    ],
+    "coverage_types": {
+      "Luxembourg": "cross_accredited",
+      "Netherlands": "cross_accredited"
+    }
   },
   {
     "name": "Singapore Embassy in Paris",
@@ -1424,7 +1479,7 @@
     "phone": "+33-1-5679-6800",
     "email": "Singemb_Par@mfa.sg",
     "website": "https://paris.mfa.gov.sg",
-    "emergency": "+33-6-7503-2555",
+    "emergency": "+33 6 7503 2555",
     "hours": {
       "timezone": "Europe/Paris",
       "schedule": {
@@ -1441,9 +1496,16 @@
     "lat": 48.8778761,
     "lng": 2.3074507,
     "coverage": [
+      "Monaco",
+      "Andorra",
       "Portugal",
       "France"
-    ]
+    ],
+    "coverage_types": {
+      "Monaco": "informal_coverage",
+      "Andorra": "informal_coverage",
+      "Portugal": "cross_accredited_with_honorary"
+    }
   },
   {
     "name": "Singapore Embassy in Berlin",
@@ -1455,7 +1517,7 @@
     "phone": "+49-(30) 2263-430",
     "email": "singemb_ber@mfa.sg",
     "website": "https://berlin.mfa.gov.sg",
-    "emergency": "+49-152-2341-2182",
+    "emergency": "+49 152 2341 2182",
     "hours": {
       "timezone": "Europe/Berlin",
       "schedule": {
@@ -1473,7 +1535,8 @@
     "lng": 13.377752,
     "coverage": [
       "Federal Republic of Germany"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in London",
@@ -1485,7 +1548,7 @@
     "phone": "+44-20-7235-8315",
     "email": "singhc_lon@mfa.sg",
     "website": "https://london.mfa.gov.sg",
-    "emergency": "+44 (0) 77 1034-8335",
+    "emergency": "+44 7710 348 335",
     "hours": {
       "timezone": "Europe/London",
       "schedule": {
@@ -1505,7 +1568,11 @@
       "Iceland",
       "Ireland",
       "United Kingdom"
-    ]
+    ],
+    "coverage_types": {
+      "Iceland": "cross_accredited",
+      "Ireland": "cross_accredited_with_honorary"
+    }
   },
   {
     "name": "Singapore Permanent Mission in Geneva",
@@ -1517,7 +1584,7 @@
     "phone": "+41-22-795-0101",
     "email": "MFA_GVA_UN@mfa.gov.sg",
     "website": "https://geneva-un.mfa.gov.sg",
-    "emergency": "+65 6379 8800",
+    "emergency": "+41 79 600 9833",
     "hours": {
       "timezone": "Europe/Zurich",
       "schedule": {
@@ -1535,7 +1602,8 @@
     "lng": 6.1111021,
     "coverage": [
       "Switzerland"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Ankara",
@@ -1547,7 +1615,7 @@
     "phone": "+90-312-442-4330",
     "email": "singemb_ank@mfa.sg",
     "website": "https://ankara.mfa.gov.sg",
-    "emergency": "+65 6379 8800",
+    "emergency": "+90 530 066 7311",
     "hours": {
       "timezone": "Europe/Istanbul",
       "schedule": {
@@ -1565,7 +1633,8 @@
     "lng": 32.8540497,
     "coverage": [
       "T\u00fcrkiye"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Hamburg",
@@ -1595,7 +1664,8 @@
     "lng": 10.0013165,
     "coverage": [
       "Federal Republic of Germany"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Frankfurt",
@@ -1625,7 +1695,8 @@
     "lng": 8.6820917,
     "coverage": [
       "Federal Republic of Germany"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Munich",
@@ -1655,7 +1726,8 @@
     "lng": 11.5834383,
     "coverage": [
       "Federal Republic of Germany"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Vienna",
@@ -1685,7 +1757,8 @@
     "lng": 16.3725042,
     "coverage": [
       "Austria"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Prague",
@@ -1715,7 +1788,8 @@
     "lng": 14.4322027,
     "coverage": [
       "Czech Republic"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Copenhagen",
@@ -1745,7 +1819,8 @@
     "lng": 12.57633,
     "coverage": [
       "Denmark"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Helsinki",
@@ -1775,7 +1850,8 @@
     "lng": 25.0435977,
     "coverage": [
       "Finland"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Athens",
@@ -1805,7 +1881,8 @@
     "lng": 23.808875,
     "coverage": [
       "Greece"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate in Budapest",
@@ -1835,7 +1912,8 @@
     "lng": 19.1457723,
     "coverage": [
       "Hungary"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Dublin",
@@ -1865,7 +1943,8 @@
     "lng": -6.2605593,
     "coverage": [
       "Ireland"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Rome",
@@ -1895,7 +1974,8 @@
     "lng": 12.4810585,
     "coverage": [
       "Italy"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate in Warsaw",
@@ -1925,7 +2005,8 @@
     "lng": 21.0711489,
     "coverage": [
       "Poland"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate in Lisbon",
@@ -1955,7 +2036,8 @@
     "lng": -9.1365919,
     "coverage": [
       "Portugal"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Barcelona",
@@ -1985,7 +2067,8 @@
     "lng": 2.177073,
     "coverage": [
       "Spain"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Madrid",
@@ -2015,7 +2098,8 @@
     "lng": -3.6412048,
     "coverage": [
       "Spain"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Istanbul",
@@ -2045,7 +2129,8 @@
     "lng": 28.9758715,
     "coverage": [
       "T\u00fcrkiye"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Oslo",
@@ -2075,7 +2160,8 @@
     "lng": 10.7389701,
     "coverage": [
       "Norway"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate in Astana",
@@ -2105,7 +2191,8 @@
     "lng": 71.4306682,
     "coverage": [
       "Kazakhstan"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore High Commission in Pretoria",
@@ -2117,7 +2204,7 @@
     "phone": "+27-12-430-6035",
     "email": "Singhc_pry@mfa.sg",
     "website": "https://pretoria.mfa.gov.sg",
-    "emergency": "+27-729-888-759",
+    "emergency": "+27 72 988 8759",
     "hours": {
       "timezone": "Africa/Johannesburg",
       "schedule": {
@@ -2140,7 +2227,14 @@
       "Namibia",
       "Zimbabwe",
       "South Africa"
-    ]
+    ],
+    "coverage_types": {
+      "Botswana": "cross_accredited",
+      "Eswatini": "cross_accredited",
+      "Lesotho": "cross_accredited",
+      "Namibia": "cross_accredited",
+      "Zimbabwe": "cross_accredited"
+    }
   },
   {
     "name": "Singapore Embassy in Cairo",
@@ -2152,7 +2246,7 @@
     "phone": "+20-2-3749-0468",
     "email": "singemb_cai@mfa.sg",
     "website": "https://cairo.mfa.gov.sg",
-    "emergency": "+20-10-9806-4130",
+    "emergency": "+20 10 9806 4130",
     "hours": {
       "timezone": "Africa/Cairo",
       "schedule": {
@@ -2171,7 +2265,10 @@
     "coverage": [
       "Libya",
       "Egypt"
-    ]
+    ],
+    "coverage_types": {
+      "Libya": "cross_accredited"
+    }
   },
   {
     "name": "Singapore Embassy in Tel Aviv",
@@ -2201,7 +2298,8 @@
     "lng": 34.7818064,
     "coverage": [
       "Israel"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Muscat",
@@ -2213,7 +2311,7 @@
     "phone": "+968 2460-7760",
     "email": "singemb_mct@mfa.sg",
     "website": "https://muscat.mfa.gov.sg",
-    "emergency": "+968 9910-2558",
+    "emergency": "+968 9910 2558",
     "hours": {
       "timezone": "Asia/Muscat",
       "schedule": {
@@ -2230,8 +2328,12 @@
     "lat": 23.6123628,
     "lng": 58.5938134,
     "coverage": [
+      "Yemen",
       "Oman"
-    ]
+    ],
+    "coverage_types": {
+      "Yemen": "informal_coverage"
+    }
   },
   {
     "name": "Singapore Embassy in Doha",
@@ -2243,7 +2345,7 @@
     "phone": "+974-4412-8082",
     "email": "singemb_doh@mfa.sg",
     "website": "https://doha.mfa.gov.sg",
-    "emergency": "+974-5548-8608",
+    "emergency": "+974 5548 8608",
     "hours": {
       "timezone": "Asia/Qatar",
       "schedule": {
@@ -2261,7 +2363,8 @@
     "lng": 51.5081812,
     "coverage": [
       "Qatar"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Jeddah",
@@ -2273,7 +2376,7 @@
     "phone": "+966-12-607-3980",
     "email": "Singcg_JED@mfa.sg",
     "website": "https://jeddah.mfa.gov.sg",
-    "emergency": "+966-50-559-6481",
+    "emergency": "+966 50 559 6481",
     "hours": {
       "timezone": "Asia/Riyadh",
       "schedule": {
@@ -2291,7 +2394,8 @@
     "lng": 39.1742363,
     "coverage": [
       "Saudi Arabia"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Embassy in Riyadh",
@@ -2303,7 +2407,7 @@
     "phone": "+966-11-480-3855",
     "email": "singemb_ruh@mfa.sg",
     "website": "https://riyadh.mfa.gov.sg",
-    "emergency": "+966-50019-1220",
+    "emergency": "+966 500 191 220",
     "hours": {
       "timezone": "Asia/Riyadh",
       "schedule": {
@@ -2322,7 +2426,10 @@
     "coverage": [
       "Bahrain",
       "Saudi Arabia"
-    ]
+    ],
+    "coverage_types": {
+      "Bahrain": "cross_accredited"
+    }
   },
   {
     "name": "Singapore Embassy in Abu Dhabi",
@@ -2334,7 +2441,7 @@
     "phone": "+971-2-222-2083",
     "email": "singemb_auh@mfa.sg",
     "website": "https://abudhabi.mfa.gov.sg",
-    "emergency": "+65 6379 8800",
+    "emergency": "+971 50 812 2413",
     "hours": {
       "timezone": "Asia/Dubai",
       "schedule": {
@@ -2352,7 +2459,8 @@
     "lng": 54.3658158,
     "coverage": [
       "United Arab Emirates"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Consulate-General in Dubai",
@@ -2364,7 +2472,7 @@
     "phone": "001-(971) 4 321 9498",
     "email": "singcg_dxb@mfa.sg",
     "website": "https://www.mfa.gov.sg/dubai",
-    "emergency": "+65 6379 8800",
+    "emergency": "+971 50 455 1959",
     "hours": {
       "timezone": "Asia/Dubai",
       "schedule": {
@@ -2382,7 +2490,8 @@
     "lng": 55.1885387,
     "coverage": [
       "United Arab Emirates"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Amman",
@@ -2412,7 +2521,8 @@
     "lng": 35.9239625,
     "coverage": [
       "Jordan"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Beirut",
@@ -2442,7 +2552,8 @@
     "lng": 35.5025585,
     "coverage": [
       "Lebanon"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Casablanca",
@@ -2472,7 +2583,8 @@
     "lng": -7.6200284,
     "coverage": [
       "Morocco"
-    ]
+    ],
+    "coverage_types": {}
   },
   {
     "name": "Singapore Honorary Consulate-General in Lagos",
@@ -2502,6 +2614,7 @@
     "lng": 3.3941795,
     "coverage": [
       "Nigeria"
-    ]
+    ],
+    "coverage_types": {}
   }
 ]

@@ -1,5 +1,5 @@
-import { state, normalizeCountryName } from './state.js';
-import { showInfoPanel } from './ui.js';
+import { state, normalizeCountryName } from './state.js?v=6';
+import { showInfoPanel } from './ui.js?v=6';
 
 export function initMap() {
     state.map = L.map('map', {

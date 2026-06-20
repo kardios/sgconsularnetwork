@@ -24,7 +24,7 @@ missions:
       timezone: "America/Sao_Paulo"
       schedule: { mon: "09:00-18:00", tue: "09:00-18:00", wed: "09:00-18:00", thu: "09:00-18:00", fri: "09:00-18:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+55 (61) 99584 9583"
+    emergency_contact: "+55 61 99584 9583"
 
   Singapore Consulate in New York:
     type: Consulate
@@ -38,7 +38,7 @@ missions:
       timezone: "America/New_York"
       schedule: { mon: "09:00-13:00", tue: "09:00-13:00", wed: "09:00-13:00", thu: "09:00-13:00", fri: "09:00-13:00", sat: closed, sun: closed }
       by_appointment: true
-    emergency_contact: "+1 212 223 3331 ext 151"
+    emergency_contact: "+1 917 293 4540"
 
   Singapore Consulate-General in San Francisco:
     type: Consulate-General
@@ -66,7 +66,7 @@ missions:
       timezone: "America/New_York"
       schedule: { mon: "09:00-13:00,14:00-17:30", tue: "09:00-13:00,14:00-17:30", wed: "09:00-13:00,14:00-17:30", thu: "09:00-13:00,14:00-17:30", fri: "09:00-13:00,14:00-17:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+1-202-537-3100 Ext 140"
+    emergency_contact: "+1 202 537 3100 x140"
 
   Singapore Honorary Consulate in Miami:
     type: Honorary Consulate
@@ -179,7 +179,7 @@ missions:
       timezone: "Asia/Shanghai"
       schedule: { mon: "08:30-12:00,13:00-17:00", tue: "08:30-12:00,13:00-17:00", wed: "08:30-12:00,13:00-17:00", thu: "08:30-12:00,13:00-17:00", fri: "08:30-12:00,13:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+86-1391-0755-251"
+    emergency_contact: "+86 139 1075 5251"
 
   Singapore Consulate-General in Chengdu:
     type: Consulate-General
@@ -193,7 +193,7 @@ missions:
       timezone: "Asia/Shanghai"
       schedule: { mon: "08:30-12:00,13:00-17:00", tue: "08:30-12:00,13:00-17:00", wed: "08:30-12:00,13:00-17:00", thu: "08:30-12:00,13:00-17:00", fri: "08:30-12:00,13:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+86-1390-807-3562"
+    emergency_contact: "+86 139 0807 3562"
 
   Singapore Consulate-General in Guangzhou:
     type: Consulate-General
@@ -207,7 +207,7 @@ missions:
       timezone: "Asia/Shanghai"
       schedule: { mon: "08:30-12:30,13:30-17:00", tue: "08:30-12:30,13:30-17:00", wed: "08:30-12:30,13:30-17:00", thu: "08:30-12:30,13:30-17:00", fri: "08:30-12:30,13:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+86-1392-229-6253"
+    emergency_contact: "+86 139 2229 6253"
 
   Singapore Consulate-General in Shanghai:
     type: Consulate-General
@@ -221,7 +221,7 @@ missions:
       timezone: "Asia/Shanghai"
       schedule: { mon: "08:30-12:00,13:00-17:00", tue: "08:30-12:00,13:00-17:00", wed: "08:30-12:00,13:00-17:00", thu: "08:30-12:00,13:00-17:00", fri: "08:30-12:00,13:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+86-1380-194-9439"
+    emergency_contact: "+86 1380 1949 439"
 
   Singapore Consulate-General in Xiamen:
     type: Consulate-General
@@ -235,7 +235,7 @@ missions:
       timezone: "Asia/Shanghai"
       schedule: { mon: "08:30-12:30,13:30-17:00", tue: "08:30-12:30,13:30-17:00", wed: "08:30-12:30,13:30-17:00", thu: "08:30-12:30,13:30-17:00", fri: "08:30-12:30,13:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+86-138-0607-1221"
+    emergency_contact: "+86 138 0607 1221"
 
   Singapore Consulate-General in Hong Kong:
     type: Consulate-General
@@ -249,7 +249,7 @@ missions:
       timezone: "Asia/Hong_Kong"
       schedule: { mon: "09:00-12:30,14:00-17:30", tue: "09:00-12:30,14:00-17:30", wed: "09:00-12:30,14:00-17:30", thu: "09:00-12:30,14:00-17:30", fri: "09:00-12:30,14:00-17:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+852 9466-1251"
+    emergency_contact: "+852 9466 1251"
 
   Singapore Embassy in Tokyo:
     type: Embassy
@@ -263,7 +263,7 @@ missions:
       timezone: "Asia/Tokyo"
       schedule: { mon: "09:00-12:30,13:30-17:30", tue: "09:00-12:30,13:30-17:30", wed: "09:00-12:30,13:30-17:30", thu: "09:00-12:30,13:30-17:30", fri: "09:00-12:30,13:30-17:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+81-90-5258-3252"
+    emergency_contact: "+81 90 5949 6366 / +81 90 5258 3252"
 
   Singapore Honorary Consulate-General in Nagoya:
     type: Honorary Consulate-General
@@ -305,7 +305,7 @@ missions:
       timezone: "Asia/Seoul"
       schedule: { mon: "09:00-12:30,13:30-17:30", tue: "09:00-12:30,13:30-17:30", wed: "09:00-12:30,13:30-17:30", thu: "09:00-12:30,13:30-17:30", fri: "09:00-12:30,13:30-17:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+82-10-7204-6240"
+    emergency_contact: "+82 10 7204 6240"
 
   Singapore Trade Office in Taipei:
     type: Trade Office
@@ -319,7 +319,7 @@ missions:
       timezone: "Asia/Taipei"
       schedule: { mon: "09:00-12:30,13:30-17:30", tue: "09:00-12:30,13:30-17:30", wed: "09:00-12:30,13:30-17:30", thu: "09:00-12:30,13:30-17:30", fri: "09:00-12:30,13:30-17:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+886-953-532-638"
+    emergency_contact: "+886 953 532 638"
 
   Singapore High Commission in Canberra:
     type: High Commission
@@ -333,7 +333,7 @@ missions:
       timezone: "Australia/Canberra"
       schedule: { mon: "08:30-17:00", tue: "08:30-17:00", wed: "08:30-17:00", thu: "08:30-17:00", fri: "08:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+61-414-733-944"
+    emergency_contact: "+61 414 733 944"
 
   Singapore High Commission in Wellington:
     type: High Commission
@@ -347,7 +347,7 @@ missions:
       timezone: "Pacific/Auckland"
       schedule: { mon: "09:00-13:00,13:45-17:00", tue: "09:00-13:00,13:45-17:00", wed: "09:00-13:00,13:45-17:00", thu: "09:00-13:00,13:45-17:00", fri: "09:00-13:00,13:45-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+64-21-280-3161"
+    emergency_contact: "+64 21 280 3161"
 
   Singapore High Commission in New Delhi:
     type: High Commission
@@ -361,7 +361,7 @@ missions:
       timezone: "Asia/Kolkata"
       schedule: { mon: "09:00-13:00,13:30-17:00", tue: "09:00-13:00,13:30-17:00", wed: "09:00-13:00,13:30-17:00", thu: "09:00-13:00,13:30-17:00", fri: "09:00-13:00,13:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+91-981-020-3595"
+    emergency_contact: "+91 98 1020 3595"
 
   Singapore Consulate-General in Chennai:
     type: Consulate-General
@@ -375,7 +375,7 @@ missions:
       timezone: "Asia/Kolkata"
       schedule: { mon: "08:30-13:00,14:00-17:00", tue: "08:30-13:00,14:00-17:00", wed: "08:30-13:00,14:00-17:00", thu: "08:30-13:00,14:00-17:00", fri: "08:30-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+91-984-003-3136"
+    emergency_contact: "+91 98 4003 3136"
 
   Singapore Consulate-General in Mumbai:
     type: Consulate-General
@@ -389,7 +389,7 @@ missions:
       timezone: "Asia/Kolkata"
       schedule: { mon: "08:30-13:00,14:00-17:00", tue: "08:30-13:00,14:00-17:00", wed: "08:30-13:00,14:00-17:00", thu: "08:30-13:00,14:00-17:00", fri: "08:30-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+91-82910 32836"
+    emergency_contact: "+91 82910 32836"
 
   Singapore High Commission in Dhaka:
     type: High Commission
@@ -403,7 +403,7 @@ missions:
       timezone: "Asia/Dhaka"
       schedule: { mon: "09:00-17:00", tue: "09:00-17:00", wed: "09:00-17:00", thu: "09:00-17:00", fri: closed, sat: closed, sun: "09:00-17:00" }
       by_appointment: false
-    emergency_contact: "+880-181-955-7146"
+    emergency_contact: "+880 181 955 7146"
 
   Singapore High Commission in Bandar Seri Begawan:
     type: High Commission
@@ -417,7 +417,7 @@ missions:
       timezone: "Asia/Brunei"
       schedule: { mon: "08:30-13:00,14:00-17:00", tue: "08:30-13:00,14:00-17:00", wed: "08:30-13:00,14:00-17:00", thu: "08:30-13:00,14:00-17:00", fri: "08:30-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+673-8751-778"
+    emergency_contact: "+673 875 1778"
 
   Singapore Embassy in Phnom Penh:
     type: Embassy
@@ -431,7 +431,7 @@ missions:
       timezone: "Asia/Phnom_Penh"
       schedule: { mon: "08:00-12:30,14:00-17:00", tue: "08:00-12:30,14:00-17:00", wed: "08:00-12:30,14:00-17:00", thu: "08:00-12:30,14:00-17:00", fri: "08:00-12:30,14:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+855-977017371"
+    emergency_contact: "+855 97 701 7371"
 
   Singapore Embassy in Jakarta:
     type: Embassy
@@ -445,7 +445,7 @@ missions:
       timezone: "Asia/Jakarta"
       schedule: { mon: "08:30-12:30,13:30-17:00", tue: "08:30-12:30,13:30-17:00", wed: "08:30-12:30,13:30-17:00", thu: "08:30-12:30,13:30-17:00", fri: "08:30-12:30,13:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+62 21 5091 5400"
+    emergency_contact: "+62 811 863 348"
 
   Singapore Consulate-General in Batam:
     type: Consulate-General
@@ -473,7 +473,7 @@ missions:
       timezone: "Asia/Jakarta"
       schedule: { mon: "08:30-17:00", tue: "08:30-17:00", wed: "08:30-17:00", thu: "08:30-17:00", fri: "08:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+62-811-6170-339"
+    emergency_contact: "+62 811 6130 339"
 
   Singapore Embassy in Vientiane:
     type: Embassy
@@ -487,7 +487,7 @@ missions:
       timezone: "Asia/Vientiane"
       schedule: { mon: "08:30-12:00,13:00-17:00", tue: "08:30-12:00,13:00-17:00", wed: "08:30-12:00,13:00-17:00", thu: "08:30-12:00,13:00-17:00", fri: "08:30-12:00,13:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+856-20-5559-9059"
+    emergency_contact: "+856 20 5559 9059"
 
   Singapore High Commission in Kuala Lumpur:
     type: High Commission
@@ -501,7 +501,7 @@ missions:
       timezone: "Asia/Kuala_Lumpur"
       schedule: { mon: "08:30-13:00,14:00-17:00", tue: "08:30-13:00,14:00-17:00", wed: "08:30-13:00,14:00-17:00", thu: "08:30-13:00,14:00-17:00", fri: "08:30-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: true
-    emergency_contact: "+60-3-2161-6277"
+    emergency_contact: "+60 16 661 0400"
 
   Singapore Consulate-General in Johor Bahru:
     type: Consulate-General
@@ -515,7 +515,7 @@ missions:
       timezone: "Asia/Kuala_Lumpur"
       schedule: { mon: "08:30-13:00,14:00-17:00", tue: "08:30-13:00,14:00-17:00", wed: "08:30-13:00,14:00-17:00", thu: "08:30-13:00,14:00-17:00", fri: "08:30-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: true
-    emergency_contact: "+60-19-791-1166"
+    emergency_contact: "+60 19 791 1166"
 
   Singapore Embassy in Yangon:
     type: Embassy
@@ -543,7 +543,7 @@ missions:
       timezone: "Asia/Manila"
       schedule: { mon: "08:30-17:00", tue: "08:30-17:00", wed: "08:30-17:00", thu: "08:30-17:00", fri: "08:30-17:00", sat: closed, sun: closed }
       by_appointment: true
-    emergency_contact: "+63-917-860-4740"
+    emergency_contact: "+63 917 860 4740"
 
   Singapore Embassy in Bangkok:
     type: Embassy
@@ -557,7 +557,7 @@ missions:
       timezone: "Asia/Bangkok"
       schedule: { mon: "09:00-17:00", tue: "09:00-17:00", wed: "09:00-17:00", thu: "09:00-17:00", fri: "09:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+66-81-844-3580"
+    emergency_contact: "+66 81 844 3580"
 
   Singapore Embassy in Dili:
     type: Embassy
@@ -571,7 +571,7 @@ missions:
       timezone: "Asia/Dili"
       schedule: { mon: "09:00-17:30", tue: "09:00-17:30", wed: "09:00-17:30", thu: "09:00-17:30", fri: "09:00-17:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+65 6379 8800"
+    emergency_contact: "+670 7377 8888"
 
   Singapore Embassy in Hanoi:
     type: Embassy
@@ -585,7 +585,7 @@ missions:
       timezone: "Asia/Ho_Chi_Minh"
       schedule: { mon: "08:30-12:00,13:00-17:00", tue: "08:30-12:00,13:00-17:00", wed: "08:30-12:00,13:00-17:00", thu: "08:30-12:00,13:00-17:00", fri: "08:30-12:00,13:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+84-904-696-589"
+    emergency_contact: "+84 90 4696589"
 
   Singapore Consulate-General in Ho Chi Minh City:
     type: Consulate-General
@@ -599,7 +599,7 @@ missions:
       timezone: "Asia/Ho_Chi_Minh"
       schedule: { mon: "08:30-12:00,13:00-17:00", tue: "08:30-12:00,13:00-17:00", wed: "08:30-12:00,13:00-17:00", thu: "08:30-12:00,13:00-17:00", fri: "08:30-12:00,13:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+84-903-113-500"
+    emergency_contact: "+84 90 3113 500"
 
   Singapore Honorary Consulate-General in Port Moresby:
     type: Honorary Consulate-General
@@ -656,7 +656,7 @@ missions:
       timezone: "Europe/Moscow"
       schedule: { mon: "09:00-13:00,14:00-17:30", tue: "09:00-13:00,14:00-17:30", wed: "09:00-13:00,14:00-17:30", thu: "09:00-13:00,14:00-17:30", fri: "09:00-13:00,14:00-17:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+7-906-009-0069"
+    emergency_contact: "+7 906 009 0069"
 
   Singapore Embassy in Brussels:
     type: Embassy
@@ -670,7 +670,7 @@ missions:
       timezone: "Europe/Brussels"
       schedule: { mon: "08:30-12:30,13:30-17:00", tue: "08:30-12:30,13:30-17:00", wed: "08:30-12:30,13:30-17:00", thu: "08:30-12:30,13:30-17:00", fri: "08:30-12:30,13:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+32-475-618-265"
+    emergency_contact: "+32 475 618 265"
 
   Singapore Embassy in Paris:
     type: Embassy
@@ -684,7 +684,7 @@ missions:
       timezone: "Europe/Paris"
       schedule: { mon: "09:30-13:00,14:00-17:00", tue: "09:30-13:00,14:00-17:00", wed: "09:30-13:00,14:00-17:00", thu: "09:30-13:00,14:00-17:00", fri: "09:30-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+33-6-7503-2555"
+    emergency_contact: "+33 6 7503 2555"
 
   Singapore Embassy in Berlin:
     type: Embassy
@@ -698,7 +698,7 @@ missions:
       timezone: "Europe/Berlin"
       schedule: { mon: "09:00-13:00,13:30-17:00", tue: "09:00-13:00,13:30-17:00", wed: "09:00-13:00,13:30-17:00", thu: "09:00-13:00,13:30-17:00", fri: "09:00-13:00,13:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+49-152-2341-2182"
+    emergency_contact: "+49 152 2341 2182"
 
   Singapore High Commission in London:
     type: High Commission
@@ -712,7 +712,7 @@ missions:
       timezone: "Europe/London"
       schedule: { mon: "09:00-13:00,14:00-17:00", tue: "09:00-13:00,14:00-17:00", wed: "09:00-13:00,14:00-17:00", thu: "09:00-13:00,14:00-17:00", fri: "09:00-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: true
-    emergency_contact: "+44 (0) 77 1034-8335"
+    emergency_contact: "+44 7710 348 335"
 
   Singapore Permanent Mission in Geneva:
     type: Permanent Mission
@@ -726,7 +726,7 @@ missions:
       timezone: "Europe/Zurich"
       schedule: { mon: "08:30-13:00,14:00-17:00", tue: "08:30-13:00,14:00-17:00", wed: "08:30-13:00,14:00-17:00", thu: "08:30-13:00,14:00-17:00", fri: "08:30-13:00,14:00-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+65 6379 8800"
+    emergency_contact: "+41 79 600 9833"
 
   Singapore Embassy in Ankara:
     type: Embassy
@@ -740,7 +740,7 @@ missions:
       timezone: "Europe/Istanbul"
       schedule: { mon: "08:30-12:30,13:30-17:00", tue: "08:30-12:30,13:30-17:00", wed: "08:30-12:30,13:30-17:00", thu: "08:30-12:30,13:30-17:00", fri: "08:30-12:30,13:30-17:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+65 6379 8800"
+    emergency_contact: "+90 530 066 7311"
 
   Singapore Honorary Consulate-General in Hamburg:
     type: Honorary Consulate-General
@@ -1007,7 +1007,7 @@ missions:
       timezone: "Africa/Johannesburg"
       schedule: { mon: "08:00-13:00,14:00-16:30", tue: "08:00-13:00,14:00-16:30", wed: "08:00-13:00,14:00-16:30", thu: "08:00-13:00,14:00-16:30", fri: "08:00-13:00,14:00-16:30", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+27-729-888-759"
+    emergency_contact: "+27 72 988 8759"
 
   Singapore Embassy in Cairo:
     type: Embassy
@@ -1021,7 +1021,7 @@ missions:
       timezone: "Africa/Cairo"
       schedule: { mon: "08:30-15:00", tue: "08:30-15:00", wed: "08:30-15:00", thu: "08:30-15:00", fri: closed, sat: closed, sun: "08:30-15:00" }
       by_appointment: false
-    emergency_contact: "+20-10-9806-4130"
+    emergency_contact: "+20 10 9806 4130"
 
   Singapore Embassy in Tel Aviv:
     type: Embassy
@@ -1049,7 +1049,7 @@ missions:
       timezone: "Asia/Muscat"
       schedule: { mon: "08:00-15:00", tue: "08:00-15:00", wed: "08:00-15:00", thu: "08:00-15:00", fri: closed, sat: closed, sun: "08:00-15:00" }
       by_appointment: false
-    emergency_contact: "+968 9910-2558"
+    emergency_contact: "+968 9910 2558"
 
   Singapore Embassy in Doha:
     type: Embassy
@@ -1063,7 +1063,7 @@ missions:
       timezone: "Asia/Qatar"
       schedule: { mon: "08:30-15:30", tue: "08:30-15:30", wed: "08:30-15:30", thu: "08:30-15:30", fri: closed, sat: closed, sun: "08:30-15:30" }
       by_appointment: false
-    emergency_contact: "+974-5548-8608"
+    emergency_contact: "+974 5548 8608"
 
   Singapore Consulate-General in Jeddah:
     type: Consulate-General
@@ -1077,7 +1077,7 @@ missions:
       timezone: "Asia/Riyadh"
       schedule: { mon: "08:00-15:30", tue: "08:00-15:30", wed: "08:00-15:30", thu: "08:00-15:30", fri: closed, sat: closed, sun: "08:00-15:30" }
       by_appointment: false
-    emergency_contact: "+966-50-559-6481"
+    emergency_contact: "+966 50 559 6481"
 
   Singapore Embassy in Riyadh:
     type: Embassy
@@ -1091,7 +1091,7 @@ missions:
       timezone: "Asia/Riyadh"
       schedule: { mon: "08:00-15:30", tue: "08:00-15:30", wed: "08:00-15:30", thu: "08:00-15:30", fri: closed, sat: closed, sun: "08:00-15:30" }
       by_appointment: false
-    emergency_contact: "+966-50019-1220"
+    emergency_contact: "+966 500 191 220"
 
   Singapore Embassy in Abu Dhabi:
     type: Embassy
@@ -1105,7 +1105,7 @@ missions:
       timezone: "Asia/Dubai"
       schedule: { mon: "08:00-16:30", tue: "08:00-16:30", wed: "08:00-16:30", thu: "08:00-16:30", fri: "08:00-13:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+65 6379 8800"
+    emergency_contact: "+971 50 812 2413"
 
   Singapore Consulate-General in Dubai:
     type: Consulate-General
@@ -1119,7 +1119,7 @@ missions:
       timezone: "Asia/Dubai"
       schedule: { mon: "08:00-16:30", tue: "08:00-16:30", wed: "08:00-16:30", thu: "08:00-16:30", fri: "08:00-13:00", sat: closed, sun: closed }
       by_appointment: false
-    emergency_contact: "+65 6379 8800"
+    emergency_contact: "+971 50 455 1959"
 
   Singapore Honorary Consulate-General in Amman:
     type: Honorary Consulate-General
@@ -1566,14 +1566,14 @@ countries:
   Monaco:
     aliases: [Principality of Monaco]
     capital: Monaco
-    coverage_type: cross_accredited
-    accrediting_mission: Singapore Embassy in Paris
+    coverage_type: informal_coverage
+    covering_mission: Singapore Embassy in Paris
 
   Andorra:
     aliases: [Principality of Andorra]
     capital: Andorra la Vella
-    coverage_type: cross_accredited
-    accrediting_mission: Singapore Embassy in Paris
+    coverage_type: informal_coverage
+    covering_mission: Singapore Embassy in Paris
 
   Portugal:
     aliases: []
@@ -1795,8 +1795,8 @@ countries:
   Yemen:
     aliases: []
     capital: Sana'a
-    coverage_type: cross_accredited
-    accrediting_mission: Singapore Embassy in Muscat
+    coverage_type: informal_coverage
+    covering_mission: Singapore Embassy in Muscat
 
   # --- NO RESIDENT MISSION LOCATIONS ---
   American Samoa:
